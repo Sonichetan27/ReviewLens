@@ -1,0 +1,17 @@
+{
+  "name": "reviewlens",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run start --workspace=server\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run start --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
