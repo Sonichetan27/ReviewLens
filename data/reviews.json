@@ -1,1 +1,1674 @@
-[]
+[
+  {
+    "_id": "r1",
+    "placeId": "p101",
+    "authorName": "Nikhil K.",
+    "rating": 4,
+    "text": "Average experience, nothing special.",
+    "createdAt": "2026-01-12T00:00:00.000Z"
+  },
+  {
+    "_id": "r2",
+    "placeId": "p101",
+    "authorName": "Anjali M.",
+    "rating": 5,
+    "text": "Average experience, nothing special.",
+    "createdAt": "2026-02-14T00:00:00.000Z"
+  },
+  {
+    "_id": "r3",
+    "placeId": "p101",
+    "authorName": "Isha S.",
+    "rating": 5,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-04-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r4",
+    "placeId": "p101",
+    "authorName": "Nikhil K.",
+    "rating": 3,
+    "text": "Decent place for the price.",
+    "createdAt": "2026-01-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r5",
+    "placeId": "p101",
+    "authorName": "Riya R.",
+    "rating": 1,
+    "text": "The room we were given smelled of mold near the bathroom, and when we complained, they just sprayed air freshener instead of actually addressing it. Air conditioning was noisy all night, barely slept. Staff were polite when we raised the issue but nothing was actually resolved by checkout.",
+    "createdAt": "2026-05-19T00:00:00.000Z"
+  },
+  {
+    "_id": "r6",
+    "placeId": "p101",
+    "authorName": "Riya R.",
+    "rating": 4,
+    "text": "The lobby smells like fresh jasmine, small detail but it set the tone. Room service arrived within 20 minutes both times we ordered. There was a slight water pressure issue in the shower on the first day, reported it and it was fixed by evening. Elevator can get crowded during checkout hours around 11am.",
+    "createdAt": "2026-02-12T00:00:00.000Z"
+  },
+  {
+    "_id": "r7",
+    "placeId": "p101",
+    "authorName": "Riya S.",
+    "rating": 3,
+    "text": "Okay experience, nothing memorable.",
+    "createdAt": "2026-09-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r8",
+    "placeId": "p101",
+    "authorName": "Neha N.",
+    "rating": 4,
+    "text": "Not bad, could be better.",
+    "createdAt": "2026-04-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r9",
+    "placeId": "p102",
+    "authorName": "Rohan P.",
+    "rating": 5,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-05-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r10",
+    "placeId": "p102",
+    "authorName": "Tanya S.",
+    "rating": 4,
+    "text": "Booked a deluxe room for a family function. Check-in took under 10 minutes even though we arrived early. The bathroom fittings looked new and the AC was quiet, which mattered a lot in the June heat. Parking was a bit tight for our two cars but the valet handled it well. Would book again for the location alone.",
+    "createdAt": "2026-06-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r11",
+    "placeId": "p102",
+    "authorName": "Kabir T.",
+    "rating": 5,
+    "text": "Really good, would recommend to friends.",
+    "createdAt": "2026-06-19T00:00:00.000Z"
+  },
+  {
+    "_id": "r12",
+    "placeId": "p102",
+    "authorName": "Arjun N.",
+    "rating": 4,
+    "text": "Okay experience, nothing memorable.",
+    "createdAt": "2026-02-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r13",
+    "placeId": "p102",
+    "authorName": "Rahul T.",
+    "rating": 5,
+    "text": "This was honestly one of the worst experiences I've had here, service was slow and the staff seemed uninterested.",
+    "createdAt": "2026-05-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r14",
+    "placeId": "p102",
+    "authorName": "Nikhil T.",
+    "rating": 2,
+    "text": "Booked based on old photos online \u2014 the actual room was smaller and more worn out than advertised. Bedsheets had a stain we had to point out before they were changed. Breakfast was cold both mornings we went down within the stated timing.",
+    "createdAt": "2026-08-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r15",
+    "placeId": "p102",
+    "authorName": "Divya R.",
+    "rating": 4,
+    "text": "Terrible, disorganized, and overpriced for what you actually get.",
+    "createdAt": "2026-04-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r16",
+    "placeId": "p102",
+    "authorName": "Aman P.",
+    "rating": 5,
+    "text": "Stayed here for 3 nights during a work trip. The room on the 4th floor was spotless \u2014 housekeeping came twice a day without being asked. Staff at the front desk remembered my name by day two, which was a nice touch. Only downside was the wifi dropped a couple of times in the evening. Breakfast buffet had a good variety of South Indian and continental options.",
+    "createdAt": "2026-08-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r17",
+    "placeId": "p102",
+    "authorName": "Rohan R.",
+    "rating": 4,
+    "text": "Amazing experience overall, must visit.",
+    "createdAt": "2026-07-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r18",
+    "placeId": "p102",
+    "authorName": "Ritu P.",
+    "rating": 5,
+    "text": "It was fine I guess, nothing really stood out either way, quite forgettable.",
+    "createdAt": "2026-07-22T00:00:00.000Z"
+  },
+  {
+    "_id": "r19",
+    "placeId": "p102",
+    "authorName": "Isha R.",
+    "rating": 4,
+    "text": "Stayed here for 3 nights during a work trip. The room on the 4th floor was spotless \u2014 housekeeping came twice a day without being asked. Staff at the front desk remembered my name by day two, which was a nice touch. Only downside was the wifi dropped a couple of times in the evening. Breakfast buffet had a good variety of South Indian and continental options.",
+    "createdAt": "2026-04-22T00:00:00.000Z"
+  },
+  {
+    "_id": "r20",
+    "placeId": "p102",
+    "authorName": "Aarav T.",
+    "rating": 4,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-01-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r21",
+    "placeId": "p102",
+    "authorName": "Kabir V.",
+    "rating": 5,
+    "text": "Okay experience, nothing memorable.",
+    "createdAt": "2026-03-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r22",
+    "placeId": "p102",
+    "authorName": "Varun K.",
+    "rating": 4,
+    "text": "Amazing experience overall, must visit.",
+    "createdAt": "2026-07-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r23",
+    "placeId": "p102",
+    "authorName": "Karan S.",
+    "rating": 3,
+    "text": "Decent place for the price.",
+    "createdAt": "2026-02-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r24",
+    "placeId": "p103",
+    "authorName": "Sneha N.",
+    "rating": 5,
+    "text": "This was honestly one of the worst experiences I've had here, service was slow and the staff seemed uninterested.",
+    "createdAt": "2026-03-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r25",
+    "placeId": "p103",
+    "authorName": "Riya S.",
+    "rating": 2,
+    "text": "Very safe area, felt comfortable walking back late at night.",
+    "createdAt": "2026-04-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r26",
+    "placeId": "p103",
+    "authorName": "Tanya V.",
+    "rating": 5,
+    "text": "Booked a deluxe room for a family function. Check-in took under 10 minutes even though we arrived early. The bathroom fittings looked new and the AC was quiet, which mattered a lot in the June heat. Parking was a bit tight for our two cars but the valet handled it well. Would book again for the location alone.",
+    "createdAt": "2026-06-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r27",
+    "placeId": "p103",
+    "authorName": "Pooja S.",
+    "rating": 5,
+    "text": "Booked a deluxe room for a family function. Check-in took under 10 minutes even though we arrived early. The bathroom fittings looked new and the AC was quiet, which mattered a lot in the June heat. Parking was a bit tight for our two cars but the valet handled it well. Would book again for the location alone.",
+    "createdAt": "2026-08-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r28",
+    "placeId": "p103",
+    "authorName": "Meera S.",
+    "rating": 5,
+    "text": "The lobby smells like fresh jasmine, small detail but it set the tone. Room service arrived within 20 minutes both times we ordered. There was a slight water pressure issue in the shower on the first day, reported it and it was fixed by evening. Elevator can get crowded during checkout hours around 11am.",
+    "createdAt": "2026-05-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r29",
+    "placeId": "p103",
+    "authorName": "Pooja R.",
+    "rating": 5,
+    "text": "Great service and good ambience.",
+    "createdAt": "2026-03-12T00:00:00.000Z"
+  },
+  {
+    "_id": "r30",
+    "placeId": "p104",
+    "authorName": "Aman P.",
+    "rating": 4,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-06-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r31",
+    "placeId": "p104",
+    "authorName": "Anjali R.",
+    "rating": 2,
+    "text": "The room we were given smelled of mold near the bathroom, and when we complained, they just sprayed air freshener instead of actually addressing it. Air conditioning was noisy all night, barely slept. Staff were polite when we raised the issue but nothing was actually resolved by checkout.",
+    "createdAt": "2026-04-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r32",
+    "placeId": "p104",
+    "authorName": "Tanya M.",
+    "rating": 3,
+    "text": "Front desk service was slow, waited almost 20 minutes to check in.",
+    "createdAt": "2026-09-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r33",
+    "placeId": "p104",
+    "authorName": "Pooja N.",
+    "rating": 4,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-05-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r34",
+    "placeId": "p104",
+    "authorName": "Vikram N.",
+    "rating": 4,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-04-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r35",
+    "placeId": "p104",
+    "authorName": "Sneha M.",
+    "rating": 3,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-01-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r36",
+    "placeId": "p104",
+    "authorName": "Pooja N.",
+    "rating": 2,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-04-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r37",
+    "placeId": "p104",
+    "authorName": "Pooja R.",
+    "rating": 3,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-07-26T00:00:00.000Z"
+  },
+  {
+    "_id": "r38",
+    "placeId": "p104",
+    "authorName": "Sameer V.",
+    "rating": 3,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-03-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r39",
+    "placeId": "p104",
+    "authorName": "Aarav R.",
+    "rating": 5,
+    "text": "Not bad, could be better.",
+    "createdAt": "2026-08-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r40",
+    "placeId": "p104",
+    "authorName": "Shreya N.",
+    "rating": 4,
+    "text": "The lobby smells like fresh jasmine, small detail but it set the tone. Room service arrived within 20 minutes both times we ordered. There was a slight water pressure issue in the shower on the first day, reported it and it was fixed by evening. Elevator can get crowded during checkout hours around 11am.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r41",
+    "placeId": "p104",
+    "authorName": "Simran S.",
+    "rating": 4,
+    "text": "Average experience, nothing special.",
+    "createdAt": "2026-04-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r42",
+    "placeId": "p104",
+    "authorName": "Aarav P.",
+    "rating": 4,
+    "text": "The lobby smells like fresh jasmine, small detail but it set the tone. Room service arrived within 20 minutes both times we ordered. There was a slight water pressure issue in the shower on the first day, reported it and it was fixed by evening. Elevator can get crowded during checkout hours around 11am.",
+    "createdAt": "2026-06-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r43",
+    "placeId": "p104",
+    "authorName": "Rahul V.",
+    "rating": 4,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-09-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r44",
+    "placeId": "p105",
+    "authorName": "Riya R.",
+    "rating": 4,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-03-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r45",
+    "placeId": "p105",
+    "authorName": "Tanya K.",
+    "rating": 3,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-08-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r46",
+    "placeId": "p105",
+    "authorName": "Tanya S.",
+    "rating": 5,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-09-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r47",
+    "placeId": "p105",
+    "authorName": "Riya T.",
+    "rating": 2,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-04-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r48",
+    "placeId": "p105",
+    "authorName": "Rahul K.",
+    "rating": 5,
+    "text": "Very safe area, felt comfortable walking back late at night.",
+    "createdAt": "2026-01-18T00:00:00.000Z"
+  },
+  {
+    "_id": "r49",
+    "placeId": "p105",
+    "authorName": "Aman S.",
+    "rating": 5,
+    "text": "Okay experience, nothing memorable.",
+    "createdAt": "2026-09-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r50",
+    "placeId": "p105",
+    "authorName": "Vikram P.",
+    "rating": 4,
+    "text": "Amazing experience overall, must visit.",
+    "createdAt": "2026-04-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r51",
+    "placeId": "p105",
+    "authorName": "Varun P.",
+    "rating": 5,
+    "text": "Cleanliness was excellent, the room was spotless when we checked in.",
+    "createdAt": "2026-07-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r52",
+    "placeId": "p105",
+    "authorName": "Sneha V.",
+    "rating": 5,
+    "text": "Really good, would recommend to friends.",
+    "createdAt": "2026-07-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r53",
+    "placeId": "p106",
+    "authorName": "Simran S.",
+    "rating": 4,
+    "text": "Great service and good ambience.",
+    "createdAt": "2026-06-23T00:00:00.000Z"
+  },
+  {
+    "_id": "r54",
+    "placeId": "p106",
+    "authorName": "Kabir P.",
+    "rating": 3,
+    "text": "Front desk service was slow, waited almost 20 minutes to check in.",
+    "createdAt": "2026-02-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r55",
+    "placeId": "p106",
+    "authorName": "Karan T.",
+    "rating": 4,
+    "text": "The lobby smells like fresh jasmine, small detail but it set the tone. Room service arrived within 20 minutes both times we ordered. There was a slight water pressure issue in the shower on the first day, reported it and it was fixed by evening. Elevator can get crowded during checkout hours around 11am.",
+    "createdAt": "2026-07-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r56",
+    "placeId": "p106",
+    "authorName": "Aditya V.",
+    "rating": 2,
+    "text": "The room we were given smelled of mold near the bathroom, and when we complained, they just sprayed air freshener instead of actually addressing it. Air conditioning was noisy all night, barely slept. Staff were polite when we raised the issue but nothing was actually resolved by checkout.",
+    "createdAt": "2026-02-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r57",
+    "placeId": "p107",
+    "authorName": "Arjun T.",
+    "rating": 4,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r58",
+    "placeId": "p107",
+    "authorName": "Tanya P.",
+    "rating": 3,
+    "text": "Really good, would recommend to friends.",
+    "createdAt": "2026-04-26T00:00:00.000Z"
+  },
+  {
+    "_id": "r59",
+    "placeId": "p107",
+    "authorName": "Dev S.",
+    "rating": 4,
+    "text": "The butter chicken here has a smoky flavor that stood out compared to the usual creamy versions elsewhere. Table was a little sticky when we sat down but they wiped it again after we flagged it. Kids menu was decent for my 6 year old. Parking outside was chaotic on a weekend evening.",
+    "createdAt": "2026-03-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r60",
+    "placeId": "p107",
+    "authorName": "Rahul R.",
+    "rating": 4,
+    "text": "Extremely crowded on weekends, hard to get a table.",
+    "createdAt": "2026-03-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r61",
+    "placeId": "p107",
+    "authorName": "Riya T.",
+    "rating": 5,
+    "text": "This was honestly one of the worst experiences I've had here, service was slow and the staff seemed uninterested.",
+    "createdAt": "2026-01-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r62",
+    "placeId": "p107",
+    "authorName": "Simran R.",
+    "rating": 4,
+    "text": "Really good, would recommend to friends.",
+    "createdAt": "2026-02-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r63",
+    "placeId": "p107",
+    "authorName": "Simran P.",
+    "rating": 4,
+    "text": "Ordered the paneer tikka and dal makhani \u2014 the paneer was fresh and not rubbery like a lot of places nearby. Service was attentive without hovering, our waiter checked in exactly twice which felt right. It was a Friday night and moderately crowded but we still got a table without a long wait. Prices are slightly above average for the area but portion sizes justify it.",
+    "createdAt": "2026-02-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r64",
+    "placeId": "p107",
+    "authorName": "Sameer K.",
+    "rating": 2,
+    "text": "The naan was undercooked in the center on two separate visits, so it wasn't a one-off. Prices have gone up noticeably compared to six months ago without any change in quality. Restroom sink was broken during our last visit.",
+    "createdAt": "2026-03-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r65",
+    "placeId": "p107",
+    "authorName": "Priya M.",
+    "rating": 4,
+    "text": "Food quality was outstanding, best paneer dish I've had in months.",
+    "createdAt": "2026-03-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r66",
+    "placeId": "p107",
+    "authorName": "Vikram P.",
+    "rating": 2,
+    "text": "Everything was absolutely perfect, couldn't have asked for a better visit, no complaints at all.",
+    "createdAt": "2026-08-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r67",
+    "placeId": "p107",
+    "authorName": "Aditya R.",
+    "rating": 5,
+    "text": "Ordered the paneer tikka and dal makhani \u2014 the paneer was fresh and not rubbery like a lot of places nearby. Service was attentive without hovering, our waiter checked in exactly twice which felt right. It was a Friday night and moderately crowded but we still got a table without a long wait. Prices are slightly above average for the area but portion sizes justify it.",
+    "createdAt": "2026-01-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r68",
+    "placeId": "p107",
+    "authorName": "Aarav M.",
+    "rating": 4,
+    "text": "Great service and good ambience.",
+    "createdAt": "2026-07-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r69",
+    "placeId": "p107",
+    "authorName": "Shreya T.",
+    "rating": 5,
+    "text": "Decent place for the price.",
+    "createdAt": "2026-04-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r70",
+    "placeId": "p107",
+    "authorName": "Isha N.",
+    "rating": 4,
+    "text": "We came for a birthday dinner, 6 people. The staff arranged the tables together without extra charge and brought a small dessert on the house. Food quality was consistent across all our different orders \u2014 the biryani was the standout. Restroom could use better lighting but otherwise a solid pick for a group.",
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r71",
+    "placeId": "p108",
+    "authorName": "Rohan P.",
+    "rating": 3,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-07-22T00:00:00.000Z"
+  },
+  {
+    "_id": "r72",
+    "placeId": "p108",
+    "authorName": "Ritu P.",
+    "rating": 3,
+    "text": "Good place, will visit again.",
+    "createdAt": "2026-03-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r73",
+    "placeId": "p108",
+    "authorName": "Ananya P.",
+    "rating": 4,
+    "text": "Good place, will visit again.",
+    "createdAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r74",
+    "placeId": "p109",
+    "authorName": "Dev P.",
+    "rating": 4,
+    "text": "Ordered the paneer tikka and dal makhani \u2014 the paneer was fresh and not rubbery like a lot of places nearby. Service was attentive without hovering, our waiter checked in exactly twice which felt right. It was a Friday night and moderately crowded but we still got a table without a long wait. Prices are slightly above average for the area but portion sizes justify it.",
+    "createdAt": "2026-07-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r75",
+    "placeId": "p109",
+    "authorName": "Rohan T.",
+    "rating": 4,
+    "text": "We came for a birthday dinner, 6 people. The staff arranged the tables together without extra charge and brought a small dessert on the house. Food quality was consistent across all our different orders \u2014 the biryani was the standout. Restroom could use better lighting but otherwise a solid pick for a group.",
+    "createdAt": "2026-09-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r76",
+    "placeId": "p109",
+    "authorName": "Aman K.",
+    "rating": 4,
+    "text": "Ordered the paneer tikka and dal makhani \u2014 the paneer was fresh and not rubbery like a lot of places nearby. Service was attentive without hovering, our waiter checked in exactly twice which felt right. It was a Friday night and moderately crowded but we still got a table without a long wait. Prices are slightly above average for the area but portion sizes justify it.",
+    "createdAt": "2026-01-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r77",
+    "placeId": "p109",
+    "authorName": "Karan K.",
+    "rating": 1,
+    "text": "Waited 40 minutes for a table despite having a reservation, and once seated the food took another 35 minutes to arrive. The dal was clearly reheated, tasted slightly off. Manager didn't offer any resolution when we mentioned the wait time.",
+    "createdAt": "2026-09-19T00:00:00.000Z"
+  },
+  {
+    "_id": "r78",
+    "placeId": "p109",
+    "authorName": "Ritu R.",
+    "rating": 4,
+    "text": "Terrible, disorganized, and overpriced for what you actually get.",
+    "createdAt": "2026-06-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r79",
+    "placeId": "p109",
+    "authorName": "Kavya T.",
+    "rating": 4,
+    "text": "We came for a birthday dinner, 6 people. The staff arranged the tables together without extra charge and brought a small dessert on the house. Food quality was consistent across all our different orders \u2014 the biryani was the standout. Restroom could use better lighting but otherwise a solid pick for a group.",
+    "createdAt": "2026-09-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r80",
+    "placeId": "p109",
+    "authorName": "Nikhil V.",
+    "rating": 3,
+    "text": "Extremely crowded on weekends, hard to get a table.",
+    "createdAt": "2026-09-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r81",
+    "placeId": "p109",
+    "authorName": "Manish K.",
+    "rating": 3,
+    "text": "Extremely crowded on weekends, hard to get a table.",
+    "createdAt": "2026-01-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r82",
+    "placeId": "p110",
+    "authorName": "Sneha V.",
+    "rating": 4,
+    "text": "Average experience, nothing special.",
+    "createdAt": "2026-01-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r83",
+    "placeId": "p110",
+    "authorName": "Nikhil M.",
+    "rating": 4,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-02-26T00:00:00.000Z"
+  },
+  {
+    "_id": "r84",
+    "placeId": "p110",
+    "authorName": "Kavya S.",
+    "rating": 5,
+    "text": "This was honestly one of the worst experiences I've had here, service was slow and the staff seemed uninterested.",
+    "createdAt": "2026-08-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r85",
+    "placeId": "p111",
+    "authorName": "Isha M.",
+    "rating": 5,
+    "text": "Really good, would recommend to friends.",
+    "createdAt": "2026-07-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r86",
+    "placeId": "p111",
+    "authorName": "Rohan T.",
+    "rating": 2,
+    "text": "A bit pricey for the portion size honestly.",
+    "createdAt": "2026-04-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r87",
+    "placeId": "p111",
+    "authorName": "Rohan R.",
+    "rating": 1,
+    "text": "The naan was undercooked in the center on two separate visits, so it wasn't a one-off. Prices have gone up noticeably compared to six months ago without any change in quality. Restroom sink was broken during our last visit.",
+    "createdAt": "2026-08-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r88",
+    "placeId": "p111",
+    "authorName": "Priya T.",
+    "rating": 4,
+    "text": "We came for a birthday dinner, 6 people. The staff arranged the tables together without extra charge and brought a small dessert on the house. Food quality was consistent across all our different orders \u2014 the biryani was the standout. Restroom could use better lighting but otherwise a solid pick for a group.",
+    "createdAt": "2026-04-23T00:00:00.000Z"
+  },
+  {
+    "_id": "r89",
+    "placeId": "p111",
+    "authorName": "Shreya T.",
+    "rating": 2,
+    "text": "The naan was undercooked in the center on two separate visits, so it wasn't a one-off. Prices have gone up noticeably compared to six months ago without any change in quality. Restroom sink was broken during our last visit.",
+    "createdAt": "2026-08-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r90",
+    "placeId": "p111",
+    "authorName": "Aman S.",
+    "rating": 3,
+    "text": "Extremely crowded on weekends, hard to get a table.",
+    "createdAt": "2026-02-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r91",
+    "placeId": "p111",
+    "authorName": "Anjali T.",
+    "rating": 4,
+    "text": "The butter chicken here has a smoky flavor that stood out compared to the usual creamy versions elsewhere. Table was a little sticky when we sat down but they wiped it again after we flagged it. Kids menu was decent for my 6 year old. Parking outside was chaotic on a weekend evening.",
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "_id": "r92",
+    "placeId": "p112",
+    "authorName": "Vikram M.",
+    "rating": 4,
+    "text": "Good place, will visit again.",
+    "createdAt": "2026-09-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r93",
+    "placeId": "p112",
+    "authorName": "Rahul N.",
+    "rating": 5,
+    "text": "Good place, will visit again.",
+    "createdAt": "2026-06-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r94",
+    "placeId": "p112",
+    "authorName": "Isha T.",
+    "rating": 5,
+    "text": "A bit pricey for the portion size honestly.",
+    "createdAt": "2026-03-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r95",
+    "placeId": "p112",
+    "authorName": "Aarav T.",
+    "rating": 4,
+    "text": "Terrible, disorganized, and overpriced for what you actually get.",
+    "createdAt": "2026-03-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r96",
+    "placeId": "p112",
+    "authorName": "Neha N.",
+    "rating": 2,
+    "text": "Waited 40 minutes for a table despite having a reservation, and once seated the food took another 35 minutes to arrive. The dal was clearly reheated, tasted slightly off. Manager didn't offer any resolution when we mentioned the wait time.",
+    "createdAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r97",
+    "placeId": "p112",
+    "authorName": "Aman N.",
+    "rating": 3,
+    "text": "Food quality was outstanding, best paneer dish I've had in months.",
+    "createdAt": "2026-01-23T00:00:00.000Z"
+  },
+  {
+    "_id": "r98",
+    "placeId": "p112",
+    "authorName": "Dev P.",
+    "rating": 5,
+    "text": "Ordered the paneer tikka and dal makhani \u2014 the paneer was fresh and not rubbery like a lot of places nearby. Service was attentive without hovering, our waiter checked in exactly twice which felt right. It was a Friday night and moderately crowded but we still got a table without a long wait. Prices are slightly above average for the area but portion sizes justify it.",
+    "createdAt": "2026-02-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r99",
+    "placeId": "p112",
+    "authorName": "Divya V.",
+    "rating": 4,
+    "text": "Food quality was outstanding, best paneer dish I've had in months.",
+    "createdAt": "2026-01-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r100",
+    "placeId": "p112",
+    "authorName": "Yash P.",
+    "rating": 2,
+    "text": "Everything was absolutely perfect, couldn't have asked for a better visit, no complaints at all.",
+    "createdAt": "2026-05-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r101",
+    "placeId": "p112",
+    "authorName": "Neha N.",
+    "rating": 5,
+    "text": "The butter chicken here has a smoky flavor that stood out compared to the usual creamy versions elsewhere. Table was a little sticky when we sat down but they wiped it again after we flagged it. Kids menu was decent for my 6 year old. Parking outside was chaotic on a weekend evening.",
+    "createdAt": "2026-07-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r102",
+    "placeId": "p113",
+    "authorName": "Kavya S.",
+    "rating": 5,
+    "text": "Good spot for a casual catch-up. The masala chai was strong and well-balanced, not too sweet. Outdoor seating has a nice view of the street but can get a bit dusty in the evening. Prices are reasonable for the portion sizes, and they have decent vegan options which is rare around here.",
+    "createdAt": "2026-03-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r103",
+    "placeId": "p113",
+    "authorName": "Nikhil P.",
+    "rating": 3,
+    "text": "Amazing experience overall, must visit.",
+    "createdAt": "2026-08-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r104",
+    "placeId": "p113",
+    "authorName": "Neha N.",
+    "rating": 2,
+    "text": "Chairs are uncomfortable for sitting more than 30 minutes, and the music was loud enough that a conversation was difficult. Pastry case looked like it hadn't been restocked in a while \u2014 a couple of items looked stale.",
+    "createdAt": "2026-04-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r105",
+    "placeId": "p113",
+    "authorName": "Meera T.",
+    "rating": 3,
+    "text": "Decent place for the price.",
+    "createdAt": "2026-03-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r106",
+    "placeId": "p113",
+    "authorName": "Rohan M.",
+    "rating": 5,
+    "text": "Not bad, could be better.",
+    "createdAt": "2026-08-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r107",
+    "placeId": "p113",
+    "authorName": "Anjali N.",
+    "rating": 5,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-09-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r108",
+    "placeId": "p113",
+    "authorName": "Vikram M.",
+    "rating": 4,
+    "text": "Came here to read for a couple of hours on a weekday afternoon. Quiet, good lighting, and the staff didn't mind me sitting with just one coffee for a long time. The croissant was a bit stale though, wouldn't order that again. Bathroom was clean and had proper soap and paper towels.",
+    "createdAt": "2026-04-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r109",
+    "placeId": "p113",
+    "authorName": "Divya P.",
+    "rating": 2,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-07-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r110",
+    "placeId": "p113",
+    "authorName": "Karan V.",
+    "rating": 5,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r111",
+    "placeId": "p113",
+    "authorName": "Aman K.",
+    "rating": 4,
+    "text": "Okay experience, nothing memorable.",
+    "createdAt": "2026-09-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r112",
+    "placeId": "p113",
+    "authorName": "Aditya M.",
+    "rating": 5,
+    "text": "Their cold brew is genuinely one of the better ones I've had in the city, not overly bitter. Seating near the window gets good natural light for working during the day, and they don't rush you out even after 2-3 hours with one order. Wifi speed was decent for video calls. Gets loud after 6pm when it fills up with students.",
+    "createdAt": "2026-08-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r113",
+    "placeId": "p114",
+    "authorName": "Kabir K.",
+    "rating": 5,
+    "text": "Not bad, could be better.",
+    "createdAt": "2026-01-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r114",
+    "placeId": "p114",
+    "authorName": "Rohan V.",
+    "rating": 5,
+    "text": "Wheelchair accessible entrance, appreciated as my grandmother uses one.",
+    "createdAt": "2026-04-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r115",
+    "placeId": "p114",
+    "authorName": "Simran S.",
+    "rating": 4,
+    "text": "Their cold brew is genuinely one of the better ones I've had in the city, not overly bitter. Seating near the window gets good natural light for working during the day, and they don't rush you out even after 2-3 hours with one order. Wifi speed was decent for video calls. Gets loud after 6pm when it fills up with students.",
+    "createdAt": "2026-08-27T00:00:00.000Z"
+  },
+  {
+    "_id": "r116",
+    "placeId": "p114",
+    "authorName": "Rohan K.",
+    "rating": 4,
+    "text": "Their cold brew is genuinely one of the better ones I've had in the city, not overly bitter. Seating near the window gets good natural light for working during the day, and they don't rush you out even after 2-3 hours with one order. Wifi speed was decent for video calls. Gets loud after 6pm when it fills up with students.",
+    "createdAt": "2026-01-19T00:00:00.000Z"
+  },
+  {
+    "_id": "r117",
+    "placeId": "p114",
+    "authorName": "Nikhil P.",
+    "rating": 4,
+    "text": "Wheelchair accessible entrance, appreciated as my grandmother uses one.",
+    "createdAt": "2026-07-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r118",
+    "placeId": "p114",
+    "authorName": "Varun S.",
+    "rating": 4,
+    "text": "Came here to read for a couple of hours on a weekday afternoon. Quiet, good lighting, and the staff didn't mind me sitting with just one coffee for a long time. The croissant was a bit stale though, wouldn't order that again. Bathroom was clean and had proper soap and paper towels.",
+    "createdAt": "2026-05-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r119",
+    "placeId": "p114",
+    "authorName": "Isha K.",
+    "rating": 5,
+    "text": "Came here to read for a couple of hours on a weekday afternoon. Quiet, good lighting, and the staff didn't mind me sitting with just one coffee for a long time. The croissant was a bit stale though, wouldn't order that again. Bathroom was clean and had proper soap and paper towels.",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r120",
+    "placeId": "p114",
+    "authorName": "Nikhil M.",
+    "rating": 5,
+    "text": "Great service and good ambience.",
+    "createdAt": "2026-01-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r121",
+    "placeId": "p114",
+    "authorName": "Neha P.",
+    "rating": 5,
+    "text": "Their cold brew is genuinely one of the better ones I've had in the city, not overly bitter. Seating near the window gets good natural light for working during the day, and they don't rush you out even after 2-3 hours with one order. Wifi speed was decent for video calls. Gets loud after 6pm when it fills up with students.",
+    "createdAt": "2026-07-22T00:00:00.000Z"
+  },
+  {
+    "_id": "r122",
+    "placeId": "p115",
+    "authorName": "Shreya V.",
+    "rating": 5,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-06-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r123",
+    "placeId": "p115",
+    "authorName": "Varun V.",
+    "rating": 1,
+    "text": "Chairs are uncomfortable for sitting more than 30 minutes, and the music was loud enough that a conversation was difficult. Pastry case looked like it hadn't been restocked in a while \u2014 a couple of items looked stale.",
+    "createdAt": "2026-05-01T00:00:00.000Z"
+  },
+  {
+    "_id": "r124",
+    "placeId": "p115",
+    "authorName": "Kavya S.",
+    "rating": 5,
+    "text": "Their cold brew is genuinely one of the better ones I've had in the city, not overly bitter. Seating near the window gets good natural light for working during the day, and they don't rush you out even after 2-3 hours with one order. Wifi speed was decent for video calls. Gets loud after 6pm when it fills up with students.",
+    "createdAt": "2026-04-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r125",
+    "placeId": "p115",
+    "authorName": "Isha T.",
+    "rating": 4,
+    "text": "Came here to read for a couple of hours on a weekday afternoon. Quiet, good lighting, and the staff didn't mind me sitting with just one coffee for a long time. The croissant was a bit stale though, wouldn't order that again. Bathroom was clean and had proper soap and paper towels.",
+    "createdAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r126",
+    "placeId": "p116",
+    "authorName": "Pooja V.",
+    "rating": 3,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-01-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r127",
+    "placeId": "p116",
+    "authorName": "Vikram K.",
+    "rating": 5,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-01-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r128",
+    "placeId": "p116",
+    "authorName": "Ananya V.",
+    "rating": 5,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-02-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r129",
+    "placeId": "p116",
+    "authorName": "Anjali R.",
+    "rating": 2,
+    "text": "Ordered a cappuccino and it arrived lukewarm, sent it back and the second one wasn't much better. Staff seemed overwhelmed even though the place was only half full. Wifi password on the table didn't work and nobody at the counter knew the correct one.",
+    "createdAt": "2026-05-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r130",
+    "placeId": "p116",
+    "authorName": "Shreya V.",
+    "rating": 5,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-02-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r131",
+    "placeId": "p116",
+    "authorName": "Aarav S.",
+    "rating": 5,
+    "text": "Came here to read for a couple of hours on a weekday afternoon. Quiet, good lighting, and the staff didn't mind me sitting with just one coffee for a long time. The croissant was a bit stale though, wouldn't order that again. Bathroom was clean and had proper soap and paper towels.",
+    "createdAt": "2026-09-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r132",
+    "placeId": "p116",
+    "authorName": "Aman M.",
+    "rating": 2,
+    "text": "Chairs are uncomfortable for sitting more than 30 minutes, and the music was loud enough that a conversation was difficult. Pastry case looked like it hadn't been restocked in a while \u2014 a couple of items looked stale.",
+    "createdAt": "2026-01-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r133",
+    "placeId": "p116",
+    "authorName": "Varun T.",
+    "rating": 5,
+    "text": "Good spot for a casual catch-up. The masala chai was strong and well-balanced, not too sweet. Outdoor seating has a nice view of the street but can get a bit dusty in the evening. Prices are reasonable for the portion sizes, and they have decent vegan options which is rare around here.",
+    "createdAt": "2026-06-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r134",
+    "placeId": "p116",
+    "authorName": "Divya T.",
+    "rating": 4,
+    "text": "Came here to read for a couple of hours on a weekday afternoon. Quiet, good lighting, and the staff didn't mind me sitting with just one coffee for a long time. The croissant was a bit stale though, wouldn't order that again. Bathroom was clean and had proper soap and paper towels.",
+    "createdAt": "2026-07-26T00:00:00.000Z"
+  },
+  {
+    "_id": "r135",
+    "placeId": "p116",
+    "authorName": "Priya V.",
+    "rating": 4,
+    "text": "Their cold brew is genuinely one of the better ones I've had in the city, not overly bitter. Seating near the window gets good natural light for working during the day, and they don't rush you out even after 2-3 hours with one order. Wifi speed was decent for video calls. Gets loud after 6pm when it fills up with students.",
+    "createdAt": "2026-04-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r136",
+    "placeId": "p116",
+    "authorName": "Kavya S.",
+    "rating": 4,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r137",
+    "placeId": "p116",
+    "authorName": "Tanya K.",
+    "rating": 5,
+    "text": "Good spot for a casual catch-up. The masala chai was strong and well-balanced, not too sweet. Outdoor seating has a nice view of the street but can get a bit dusty in the evening. Prices are reasonable for the portion sizes, and they have decent vegan options which is rare around here.",
+    "createdAt": "2026-05-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r138",
+    "placeId": "p117",
+    "authorName": "Aarav M.",
+    "rating": 5,
+    "text": "Good spot for a casual catch-up. The masala chai was strong and well-balanced, not too sweet. Outdoor seating has a nice view of the street but can get a bit dusty in the evening. Prices are reasonable for the portion sizes, and they have decent vegan options which is rare around here.",
+    "createdAt": "2026-07-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r139",
+    "placeId": "p117",
+    "authorName": "Simran P.",
+    "rating": 3,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-03-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r140",
+    "placeId": "p117",
+    "authorName": "Aarav P.",
+    "rating": 3,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-06-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r141",
+    "placeId": "p118",
+    "authorName": "Aditya M.",
+    "rating": 1,
+    "text": "Ordered a cappuccino and it arrived lukewarm, sent it back and the second one wasn't much better. Staff seemed overwhelmed even though the place was only half full. Wifi password on the table didn't work and nobody at the counter knew the correct one.",
+    "createdAt": "2026-02-14T00:00:00.000Z"
+  },
+  {
+    "_id": "r142",
+    "placeId": "p118",
+    "authorName": "Nikhil K.",
+    "rating": 4,
+    "text": "Amazing experience overall, must visit.",
+    "createdAt": "2026-07-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r143",
+    "placeId": "p118",
+    "authorName": "Dev S.",
+    "rating": 2,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-02-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r144",
+    "placeId": "p118",
+    "authorName": "Neha T.",
+    "rating": 3,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-03-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r145",
+    "placeId": "p118",
+    "authorName": "Neha T.",
+    "rating": 2,
+    "text": "Everything was absolutely perfect, couldn't have asked for a better visit, no complaints at all.",
+    "createdAt": "2026-09-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r146",
+    "placeId": "p118",
+    "authorName": "Ritu S.",
+    "rating": 4,
+    "text": "Prices are a little high compared to nearby cafes.",
+    "createdAt": "2026-05-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r147",
+    "placeId": "p118",
+    "authorName": "Divya P.",
+    "rating": 5,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-03-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r148",
+    "placeId": "p118",
+    "authorName": "Isha M.",
+    "rating": 4,
+    "text": "Good spot for a casual catch-up. The masala chai was strong and well-balanced, not too sweet. Outdoor seating has a nice view of the street but can get a bit dusty in the evening. Prices are reasonable for the portion sizes, and they have decent vegan options which is rare around here.",
+    "createdAt": "2026-02-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r149",
+    "placeId": "p118",
+    "authorName": "Karan P.",
+    "rating": 3,
+    "text": "Wheelchair accessible entrance, appreciated as my grandmother uses one.",
+    "createdAt": "2026-02-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r150",
+    "placeId": "p118",
+    "authorName": "Nikhil T.",
+    "rating": 2,
+    "text": "Great coffee quality, easily the best espresso in the area.",
+    "createdAt": "2026-04-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r151",
+    "placeId": "p119",
+    "authorName": "Dev P.",
+    "rating": 4,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-04-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r152",
+    "placeId": "p119",
+    "authorName": "Anjali S.",
+    "rating": 2,
+    "text": "Ticket counter had no clear queue system, a lot of pushing and confusion especially on the weekend we visited. Several informational plaques were faded and unreadable. Restrooms near the exit were locked with no staff around to help.",
+    "createdAt": "2026-05-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r153",
+    "placeId": "p119",
+    "authorName": "Aman K.",
+    "rating": 5,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-01-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r154",
+    "placeId": "p119",
+    "authorName": "Divya N.",
+    "rating": 5,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-04-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r155",
+    "placeId": "p119",
+    "authorName": "Yash K.",
+    "rating": 4,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-05-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r156",
+    "placeId": "p119",
+    "authorName": "Rohan M.",
+    "rating": 5,
+    "text": "The heritage displays inside are genuinely well curated, especially the section on local history with original artifacts rather than replicas. Signage is only in Hindi and English, so it might be tricky for other tourists. Ticket counter had a short queue around noon. Wheelchair access exists but only at the ground floor.",
+    "createdAt": "2026-07-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r157",
+    "placeId": "p119",
+    "authorName": "Sneha V.",
+    "rating": 2,
+    "text": "Everything was absolutely perfect, couldn't have asked for a better visit, no complaints at all.",
+    "createdAt": "2026-09-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r158",
+    "placeId": "p119",
+    "authorName": "Rohan R.",
+    "rating": 2,
+    "text": "Paths were poorly lit in the section furthest from the entrance, felt unsafe walking back after sunset. Entry fee has increased but there was no visible improvement in maintenance compared to a visit last year.",
+    "createdAt": "2026-05-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r159",
+    "placeId": "p119",
+    "authorName": "Neha K.",
+    "rating": 2,
+    "text": "Paths were poorly lit in the section furthest from the entrance, felt unsafe walking back after sunset. Entry fee has increased but there was no visible improvement in maintenance compared to a visit last year.",
+    "createdAt": "2026-01-14T00:00:00.000Z"
+  },
+  {
+    "_id": "r160",
+    "placeId": "p119",
+    "authorName": "Ritu N.",
+    "rating": 4,
+    "text": "Terrible, disorganized, and overpriced for what you actually get.",
+    "createdAt": "2026-07-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r161",
+    "placeId": "p120",
+    "authorName": "Dev R.",
+    "rating": 4,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r162",
+    "placeId": "p120",
+    "authorName": "Sameer R.",
+    "rating": 4,
+    "text": "Nice place. Good experience overall.",
+    "createdAt": "2026-03-18T00:00:00.000Z"
+  },
+  {
+    "_id": "r163",
+    "placeId": "p120",
+    "authorName": "Nikhil V.",
+    "rating": 5,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-09-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r164",
+    "placeId": "p120",
+    "authorName": "Ananya R.",
+    "rating": 1,
+    "text": "Ticket counter had no clear queue system, a lot of pushing and confusion especially on the weekend we visited. Several informational plaques were faded and unreadable. Restrooms near the exit were locked with no staff around to help.",
+    "createdAt": "2026-02-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r165",
+    "placeId": "p120",
+    "authorName": "Karan T.",
+    "rating": 4,
+    "text": "Facilities like restrooms and seating areas were well maintained.",
+    "createdAt": "2026-01-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r166",
+    "placeId": "p120",
+    "authorName": "Anjali T.",
+    "rating": 1,
+    "text": "Paths were poorly lit in the section furthest from the entrance, felt unsafe walking back after sunset. Entry fee has increased but there was no visible improvement in maintenance compared to a visit last year.",
+    "createdAt": "2026-03-23T00:00:00.000Z"
+  },
+  {
+    "_id": "r167",
+    "placeId": "p121",
+    "authorName": "Tanya M.",
+    "rating": 4,
+    "text": "Great service and good ambience.",
+    "createdAt": "2026-04-19T00:00:00.000Z"
+  },
+  {
+    "_id": "r168",
+    "placeId": "p121",
+    "authorName": "Priya V.",
+    "rating": 4,
+    "text": "Great service and good ambience.",
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r169",
+    "placeId": "p121",
+    "authorName": "Sneha R.",
+    "rating": 4,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-09-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r170",
+    "placeId": "p121",
+    "authorName": "Yash K.",
+    "rating": 5,
+    "text": "It was fine I guess, nothing really stood out either way, quite forgettable.",
+    "createdAt": "2026-07-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r171",
+    "placeId": "p121",
+    "authorName": "Tanya T.",
+    "rating": 5,
+    "text": "Good place, will visit again.",
+    "createdAt": "2026-05-14T00:00:00.000Z"
+  },
+  {
+    "_id": "r172",
+    "placeId": "p121",
+    "authorName": "Manish M.",
+    "rating": 4,
+    "text": "Loved it. Highly recommended.",
+    "createdAt": "2026-08-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r173",
+    "placeId": "p121",
+    "authorName": "Ananya K.",
+    "rating": 5,
+    "text": "The heritage displays inside are genuinely well curated, especially the section on local history with original artifacts rather than replicas. Signage is only in Hindi and English, so it might be tricky for other tourists. Ticket counter had a short queue around noon. Wheelchair access exists but only at the ground floor.",
+    "createdAt": "2026-08-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r174",
+    "placeId": "p121",
+    "authorName": "Aman T.",
+    "rating": 5,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-02-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r175",
+    "placeId": "p121",
+    "authorName": "Kabir N.",
+    "rating": 4,
+    "text": "Really good, would recommend to friends.",
+    "createdAt": "2026-09-17T00:00:00.000Z"
+  },
+  {
+    "_id": "r176",
+    "placeId": "p121",
+    "authorName": "Shreya K.",
+    "rating": 4,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-06-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r177",
+    "placeId": "p121",
+    "authorName": "Aman S.",
+    "rating": 5,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-03-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r178",
+    "placeId": "p121",
+    "authorName": "Aarav S.",
+    "rating": 2,
+    "text": "Safety railings were sturdy throughout the walk, felt secure.",
+    "createdAt": "2026-03-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r179",
+    "placeId": "p121",
+    "authorName": "Dev T.",
+    "rating": 1,
+    "text": "Ticket counter had no clear queue system, a lot of pushing and confusion especially on the weekend we visited. Several informational plaques were faded and unreadable. Restrooms near the exit were locked with no staff around to help.",
+    "createdAt": "2026-06-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r180",
+    "placeId": "p122",
+    "authorName": "Arjun P.",
+    "rating": 3,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r181",
+    "placeId": "p122",
+    "authorName": "Anjali T.",
+    "rating": 4,
+    "text": "The heritage displays inside are genuinely well curated, especially the section on local history with original artifacts rather than replicas. Signage is only in Hindi and English, so it might be tricky for other tourists. Ticket counter had a short queue around noon. Wheelchair access exists but only at the ground floor.",
+    "createdAt": "2026-06-11T00:00:00.000Z"
+  },
+  {
+    "_id": "r182",
+    "placeId": "p122",
+    "authorName": "Priya M.",
+    "rating": 5,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-06-22T00:00:00.000Z"
+  },
+  {
+    "_id": "r183",
+    "placeId": "p122",
+    "authorName": "Dev V.",
+    "rating": 4,
+    "text": "The heritage displays inside are genuinely well curated, especially the section on local history with original artifacts rather than replicas. Signage is only in Hindi and English, so it might be tricky for other tourists. Ticket counter had a short queue around noon. Wheelchair access exists but only at the ground floor.",
+    "createdAt": "2026-09-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r184",
+    "placeId": "p122",
+    "authorName": "Priya N.",
+    "rating": 2,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-09-09T00:00:00.000Z"
+  },
+  {
+    "_id": "r185",
+    "placeId": "p122",
+    "authorName": "Nikhil V.",
+    "rating": 4,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "_id": "r186",
+    "placeId": "p122",
+    "authorName": "Manish R.",
+    "rating": 2,
+    "text": "Ticket counter had no clear queue system, a lot of pushing and confusion especially on the weekend we visited. Several informational plaques were faded and unreadable. Restrooms near the exit were locked with no staff around to help.",
+    "createdAt": "2026-03-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r187",
+    "placeId": "p122",
+    "authorName": "Tanya K.",
+    "rating": 2,
+    "text": "Paths were poorly lit in the section furthest from the entrance, felt unsafe walking back after sunset. Entry fee has increased but there was no visible improvement in maintenance compared to a visit last year.",
+    "createdAt": "2026-06-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r188",
+    "placeId": "p122",
+    "authorName": "Kavya K.",
+    "rating": 3,
+    "text": "Facilities like restrooms and seating areas were well maintained.",
+    "createdAt": "2026-07-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r189",
+    "placeId": "p122",
+    "authorName": "Neha N.",
+    "rating": 5,
+    "text": "Facilities like restrooms and seating areas were well maintained.",
+    "createdAt": "2026-01-08T00:00:00.000Z"
+  },
+  {
+    "_id": "r190",
+    "placeId": "p122",
+    "authorName": "Aarav K.",
+    "rating": 5,
+    "text": "The heritage displays inside are genuinely well curated, especially the section on local history with original artifacts rather than replicas. Signage is only in Hindi and English, so it might be tricky for other tourists. Ticket counter had a short queue around noon. Wheelchair access exists but only at the ground floor.",
+    "createdAt": "2026-09-04T00:00:00.000Z"
+  },
+  {
+    "_id": "r191",
+    "placeId": "p122",
+    "authorName": "Divya M.",
+    "rating": 1,
+    "text": "Paths were poorly lit in the section furthest from the entrance, felt unsafe walking back after sunset. Entry fee has increased but there was no visible improvement in maintenance compared to a visit last year.",
+    "createdAt": "2026-06-07T00:00:00.000Z"
+  },
+  {
+    "_id": "r192",
+    "placeId": "p123",
+    "authorName": "Kabir K.",
+    "rating": 3,
+    "text": "Facilities like restrooms and seating areas were well maintained.",
+    "createdAt": "2026-02-15T00:00:00.000Z"
+  },
+  {
+    "_id": "r193",
+    "placeId": "p123",
+    "authorName": "Rohan R.",
+    "rating": 5,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-05-26T00:00:00.000Z"
+  },
+  {
+    "_id": "r194",
+    "placeId": "p123",
+    "authorName": "Aarav K.",
+    "rating": 5,
+    "text": "It was fine I guess, nothing really stood out either way, quite forgettable.",
+    "createdAt": "2026-08-20T00:00:00.000Z"
+  },
+  {
+    "_id": "r195",
+    "placeId": "p123",
+    "authorName": "Tanya T.",
+    "rating": 4,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-09-02T00:00:00.000Z"
+  },
+  {
+    "_id": "r196",
+    "placeId": "p123",
+    "authorName": "Aarav V.",
+    "rating": 4,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-02-25T00:00:00.000Z"
+  },
+  {
+    "_id": "r197",
+    "placeId": "p123",
+    "authorName": "Aarav M.",
+    "rating": 5,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-03-27T00:00:00.000Z"
+  },
+  {
+    "_id": "r198",
+    "placeId": "p123",
+    "authorName": "Aditya P.",
+    "rating": 4,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-08-24T00:00:00.000Z"
+  },
+  {
+    "_id": "r199",
+    "placeId": "p123",
+    "authorName": "Varun K.",
+    "rating": 2,
+    "text": "Paths were poorly lit in the section furthest from the entrance, felt unsafe walking back after sunset. Entry fee has increased but there was no visible improvement in maintenance compared to a visit last year.",
+    "createdAt": "2026-08-03T00:00:00.000Z"
+  },
+  {
+    "_id": "r200",
+    "placeId": "p123",
+    "authorName": "Ananya M.",
+    "rating": 3,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-01-21T00:00:00.000Z"
+  },
+  {
+    "_id": "r201",
+    "placeId": "p123",
+    "authorName": "Sneha N.",
+    "rating": 4,
+    "text": "Safety railings were sturdy throughout the walk, felt secure.",
+    "createdAt": "2026-01-23T00:00:00.000Z"
+  },
+  {
+    "_id": "r202",
+    "placeId": "p123",
+    "authorName": "Rahul V.",
+    "rating": 5,
+    "text": "It was fine I guess, nothing really stood out either way, quite forgettable.",
+    "createdAt": "2026-04-10T00:00:00.000Z"
+  },
+  {
+    "_id": "r203",
+    "placeId": "p123",
+    "authorName": "Rohan K.",
+    "rating": 4,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "_id": "r204",
+    "placeId": "p124",
+    "authorName": "Tanya M.",
+    "rating": 5,
+    "text": "Decent place for the price.",
+    "createdAt": "2026-09-16T00:00:00.000Z"
+  },
+  {
+    "_id": "r205",
+    "placeId": "p124",
+    "authorName": "Varun K.",
+    "rating": 3,
+    "text": "Very crowded during the weekend, hard to enjoy the view.",
+    "createdAt": "2026-05-19T00:00:00.000Z"
+  },
+  {
+    "_id": "r206",
+    "placeId": "p124",
+    "authorName": "Simran M.",
+    "rating": 1,
+    "text": "Ticket counter had no clear queue system, a lot of pushing and confusion especially on the weekend we visited. Several informational plaques were faded and unreadable. Restrooms near the exit were locked with no staff around to help.",
+    "createdAt": "2026-01-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r207",
+    "placeId": "p124",
+    "authorName": "Aarav S.",
+    "rating": 5,
+    "text": "Visited early morning around 7am to avoid the crowd, which worked out well \u2014 the gardens were quiet and well maintained, with clearly labeled plant species. There's a small entry fee that goes toward upkeep according to the signage. Restrooms near the entrance were clean but the ones further inside were locked. Good accessibility with ramps at the main gate.",
+    "createdAt": "2026-01-05T00:00:00.000Z"
+  },
+  {
+    "_id": "r208",
+    "placeId": "p124",
+    "authorName": "Aarav K.",
+    "rating": 4,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-02-23T00:00:00.000Z"
+  },
+  {
+    "_id": "r209",
+    "placeId": "p124",
+    "authorName": "Kavya K.",
+    "rating": 5,
+    "text": "Went on a weekday and it wasn't crowded at all, could take my time at the viewpoint without people crowding for photos. The pathway up has decent lighting and railings for safety, though a few sections were under repair when I visited. Worth the entry fee just for the sunset view.",
+    "createdAt": "2026-09-07T00:00:00.000Z"
+  }
+]
