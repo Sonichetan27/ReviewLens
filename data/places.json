@@ -1,1 +1,266 @@
-[]
+[
+  {
+    "_id": "p101",
+    "name": "The Grand Meridian",
+    "category": "hotel",
+    "city": "Indore",
+    "priceLevel": "high",
+    "overallRating": 3.6,
+    "address": "190 Station Road, Indore",
+    "imageUrl": "https://picsum.photos/seed/101/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p102",
+    "name": "Blue Orchid Residency",
+    "category": "hotel",
+    "city": "Bhopal",
+    "priceLevel": "low",
+    "overallRating": 3.7,
+    "address": "189 MG Road, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/102/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p103",
+    "name": "Hilltop Inn",
+    "category": "hotel",
+    "city": "Jaipur",
+    "priceLevel": "high",
+    "overallRating": 4.4,
+    "address": "140 MG Road, Jaipur",
+    "imageUrl": "https://picsum.photos/seed/103/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p104",
+    "name": "Riverside Palace Hotel",
+    "category": "hotel",
+    "city": "Mumbai",
+    "priceLevel": "high",
+    "overallRating": 4.0,
+    "address": "8 MG Road, Mumbai",
+    "imageUrl": "https://picsum.photos/seed/104/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p105",
+    "name": "Emerald Stay",
+    "category": "hotel",
+    "city": "Indore",
+    "priceLevel": "low",
+    "overallRating": 3.7,
+    "address": "155 MG Road, Indore",
+    "imageUrl": "https://picsum.photos/seed/105/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p106",
+    "name": "Sunrise Heritage Hotel",
+    "category": "hotel",
+    "city": "Bhopal",
+    "priceLevel": "high",
+    "overallRating": 3.7,
+    "address": "167 Market Lane, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/106/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p107",
+    "name": "Spice Route Kitchen",
+    "category": "restaurant",
+    "city": "Indore",
+    "priceLevel": "medium",
+    "overallRating": 3.7,
+    "address": "151 Station Road, Indore",
+    "imageUrl": "https://picsum.photos/seed/107/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p108",
+    "name": "The Copper Pot",
+    "category": "restaurant",
+    "city": "Bhopal",
+    "priceLevel": "low",
+    "overallRating": 4.5,
+    "address": "41 Palace Street, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/108/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p109",
+    "name": "Malwa Thali House",
+    "category": "restaurant",
+    "city": "Jaipur",
+    "priceLevel": "medium",
+    "overallRating": 3.8,
+    "address": "56 Station Road, Jaipur",
+    "imageUrl": "https://picsum.photos/seed/109/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p110",
+    "name": "Bombay Bites",
+    "category": "restaurant",
+    "city": "Mumbai",
+    "priceLevel": "low",
+    "overallRating": 3.5,
+    "address": "25 Station Road, Mumbai",
+    "imageUrl": "https://picsum.photos/seed/110/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p111",
+    "name": "Rajwada Dining",
+    "category": "restaurant",
+    "city": "Indore",
+    "priceLevel": "medium",
+    "overallRating": 4.2,
+    "address": "12 Palace Street, Indore",
+    "imageUrl": "https://picsum.photos/seed/111/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p112",
+    "name": "Green Chilli Restaurant",
+    "category": "restaurant",
+    "city": "Bhopal",
+    "priceLevel": "high",
+    "overallRating": 3.6,
+    "address": "97 MG Road, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/112/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p113",
+    "name": "Bean & Brew",
+    "category": "cafe",
+    "city": "Indore",
+    "priceLevel": "high",
+    "overallRating": 3.8,
+    "address": "161 Market Lane, Indore",
+    "imageUrl": "https://picsum.photos/seed/113/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p114",
+    "name": "Cafe Rasoi",
+    "category": "cafe",
+    "city": "Bhopal",
+    "priceLevel": "medium",
+    "overallRating": 4.2,
+    "address": "181 MG Road, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/114/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p115",
+    "name": "The Reading Corner Cafe",
+    "category": "cafe",
+    "city": "Jaipur",
+    "priceLevel": "low",
+    "overallRating": 4.3,
+    "address": "198 Station Road, Jaipur",
+    "imageUrl": "https://picsum.photos/seed/115/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p116",
+    "name": "Sunset Terrace Cafe",
+    "category": "cafe",
+    "city": "Mumbai",
+    "priceLevel": "low",
+    "overallRating": 4.6,
+    "address": "26 Palace Street, Mumbai",
+    "imageUrl": "https://picsum.photos/seed/116/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p117",
+    "name": "Old Town Coffee House",
+    "category": "cafe",
+    "city": "Indore",
+    "priceLevel": "medium",
+    "overallRating": 4.0,
+    "address": "94 Lake Road, Indore",
+    "imageUrl": "https://picsum.photos/seed/117/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p118",
+    "name": "Cafe Meraki",
+    "category": "cafe",
+    "city": "Bhopal",
+    "priceLevel": "medium",
+    "overallRating": 3.9,
+    "address": "172 Station Road, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/118/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p119",
+    "name": "Lakeview Gardens",
+    "category": "attraction",
+    "city": "Indore",
+    "priceLevel": "high",
+    "overallRating": 4.7,
+    "address": "166 MG Road, Indore",
+    "imageUrl": "https://picsum.photos/seed/119/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p120",
+    "name": "Heritage Fort Museum",
+    "category": "attraction",
+    "city": "Bhopal",
+    "priceLevel": "high",
+    "overallRating": 4.3,
+    "address": "137 Lake Road, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/120/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p121",
+    "name": "City Art Gallery",
+    "category": "attraction",
+    "city": "Jaipur",
+    "priceLevel": "low",
+    "overallRating": 4.0,
+    "address": "70 Market Lane, Jaipur",
+    "imageUrl": "https://picsum.photos/seed/121/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p122",
+    "name": "Riverside Walkway",
+    "category": "attraction",
+    "city": "Mumbai",
+    "priceLevel": "low",
+    "overallRating": 4.4,
+    "address": "197 MG Road, Mumbai",
+    "imageUrl": "https://picsum.photos/seed/122/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p123",
+    "name": "Old Palace Grounds",
+    "category": "attraction",
+    "city": "Indore",
+    "priceLevel": "low",
+    "overallRating": 4.6,
+    "address": "81 Palace Street, Indore",
+    "imageUrl": "https://picsum.photos/seed/123/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  },
+  {
+    "_id": "p124",
+    "name": "Hilltop Viewpoint",
+    "category": "attraction",
+    "city": "Bhopal",
+    "priceLevel": "medium",
+    "overallRating": 3.5,
+    "address": "146 Station Road, Bhopal",
+    "imageUrl": "https://picsum.photos/seed/124/600/400",
+    "createdAt": "2026-01-15T00:00:00.000Z"
+  }
+]
