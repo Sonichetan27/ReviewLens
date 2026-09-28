@@ -121,7 +121,7 @@ const seed = async () => {
     // Run deterministic mock analysis
     const placeRecord = places.find(p => p._id === review.placeId);
     const category = placeRecord ? placeRecord.category : 'hotel';
-    const aiResult = analyzeReview(review.text, category);
+    const aiResult = await analyzeReview(review.text, category);
 
     // Run trust signal (pass sibling reviews for Jaccard duplicate check)
     const siblings = (reviewsByPlace[review.placeId] || []).filter(r => r._id !== review._id);

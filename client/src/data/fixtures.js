@@ -406,7 +406,7 @@ export function filterPlaces({ city, category, search, budget } = {}) {
 const PRECOMPUTED_RECS = {
   p101: {
     finalScore: 86.4,
-    breakdown: { aspectMatch: 88, contextMatch: 70, sentiment: 81, trustQuality: 76, overallRating: 80 },
+    breakdown: { aspectMatch: 88, contextMatch: 70, sentiment: 81, trustQuality: 76, ratingScore: 80 },
     whyBullets: [
       'Cleanliness rated 91/100 across 11 review mentions, matching your top preference.',
       '88% Review Trust Signal (Higher-Trust): 22 customer reviews evaluated.',
@@ -414,7 +414,7 @@ const PRECOMPUTED_RECS = {
   },
   p102: {
     finalScore: 74.1,
-    breakdown: { aspectMatch: 76, contextMatch: 90, sentiment: 78, trustQuality: 53, overallRating: 68 },
+    breakdown: { aspectMatch: 76, contextMatch: 90, sentiment: 78, trustQuality: 53, ratingScore: 68 },
     whyBullets: [
       'Strong budget compatibility — low price tier aligns with a value-focused stay.',
       '74% Review Trust Signal (Medium): 11 customer reviews evaluated.',
@@ -422,7 +422,7 @@ const PRECOMPUTED_RECS = {
   },
   p103: {
     finalScore: 90.2,
-    breakdown: { aspectMatch: 91, contextMatch: 70, sentiment: 86, trustQuality: 82, overallRating: 85 },
+    breakdown: { aspectMatch: 91, contextMatch: 70, sentiment: 86, trustQuality: 82, ratingScore: 85 },
     whyBullets: [
       'Quality rated 90/100 across 11 review mentions, matching your top preference.',
       '91% Review Trust Signal (Higher-Trust): 19 customer reviews evaluated.',
@@ -430,7 +430,7 @@ const PRECOMPUTED_RECS = {
   },
   p104: {
     finalScore: 81.5,
-    breakdown: { aspectMatch: 82, contextMatch: 70, sentiment: 78, trustQuality: 68, overallRating: 75 },
+    breakdown: { aspectMatch: 82, contextMatch: 70, sentiment: 78, trustQuality: 68, ratingScore: 75 },
     whyBullets: [
       'Facilities rated 88/100 across 11 review mentions, matching your top preference.',
       '81% Review Trust Signal (Higher-Trust): 16 customer reviews evaluated.',
@@ -438,7 +438,7 @@ const PRECOMPUTED_RECS = {
   },
   p107: {
     finalScore: 88.7,
-    breakdown: { aspectMatch: 90, contextMatch: 90, sentiment: 84, trustQuality: 80, overallRating: 78 },
+    breakdown: { aspectMatch: 90, contextMatch: 90, sentiment: 84, trustQuality: 80, ratingScore: 78 },
     whyBullets: [
       'Quality rated 92/100 across 12 review mentions, matching your top preference.',
       'Strong budget compatibility — medium price tier aligns with your medium budget preference.',
@@ -447,7 +447,7 @@ const PRECOMPUTED_RECS = {
   },
   p108: {
     finalScore: 91.8,
-    breakdown: { aspectMatch: 93, contextMatch: 90, sentiment: 89, trustQuality: 85, overallRating: 88 },
+    breakdown: { aspectMatch: 93, contextMatch: 90, sentiment: 89, trustQuality: 85, ratingScore: 88 },
     whyBullets: [
       'Quality rated 94/100 across 12 review mentions, matching your top preference.',
       '90% Review Trust Signal (Higher-Trust): 28 customer reviews evaluated.',
@@ -455,7 +455,7 @@ const PRECOMPUTED_RECS = {
   },
   p111: {
     finalScore: 85.9,
-    breakdown: { aspectMatch: 86, contextMatch: 90, sentiment: 78, trustQuality: 75, overallRating: 80 },
+    breakdown: { aspectMatch: 86, contextMatch: 90, sentiment: 78, trustQuality: 75, ratingScore: 80 },
     whyBullets: [
       'Cleanliness rated 86/100 across 11 review mentions, matching your top preference.',
       '85% Review Trust Signal (Higher-Trust): 18 customer reviews evaluated.',
@@ -463,12 +463,12 @@ const PRECOMPUTED_RECS = {
   },
   p110: {
     finalScore: 58.4,
-    breakdown: { aspectMatch: 64, contextMatch: 90, sentiment: 52, trustQuality: 31, overallRating: 63 },
+    breakdown: { aspectMatch: 64, contextMatch: 90, sentiment: 52, trustQuality: 31, ratingScore: 63 },
     whyBullets: ['46% Review Trust Signal (High-Risk): 9 customer reviews evaluated.'],
   },
   p113: {
     finalScore: 80.6,
-    breakdown: { aspectMatch: 82, contextMatch: 70, sentiment: 78, trustQuality: 67, overallRating: 70 },
+    breakdown: { aspectMatch: 82, contextMatch: 70, sentiment: 78, trustQuality: 67, ratingScore: 70 },
     whyBullets: [
       'Facilities rated 91/100 across 11 review mentions, matching your top preference.',
       '83% Review Trust Signal (Higher-Trust): 13 customer reviews evaluated.',
@@ -476,7 +476,7 @@ const PRECOMPUTED_RECS = {
   },
   p115: {
     finalScore: 89.3,
-    breakdown: { aspectMatch: 88, contextMatch: 90, sentiment: 88, trustQuality: 80, overallRating: 83 },
+    breakdown: { aspectMatch: 88, contextMatch: 90, sentiment: 88, trustQuality: 80, ratingScore: 83 },
     whyBullets: [
       'Cleanliness rated 90/100 across 11 review mentions, matching your top preference.',
       '92% Review Trust Signal (Higher-Trust): 21 customer reviews evaluated.',
@@ -484,7 +484,7 @@ const PRECOMPUTED_RECS = {
   },
   p116: {
     finalScore: 90.1,
-    breakdown: { aspectMatch: 90, contextMatch: 90, sentiment: 90, trustQuality: 81, overallRating: 90 },
+    breakdown: { aspectMatch: 90, contextMatch: 90, sentiment: 90, trustQuality: 81, ratingScore: 90 },
     whyBullets: [
       'Quality rated 91/100 across 11 review mentions, matching your top preference.',
       '89% Review Trust Signal (Higher-Trust): 26 customer reviews evaluated.',
@@ -492,7 +492,7 @@ const PRECOMPUTED_RECS = {
   },
   p119: {
     finalScore: 87.4,
-    breakdown: { aspectMatch: 89, contextMatch: 70, sentiment: 91, trustQuality: 82, overallRating: 93 },
+    breakdown: { aspectMatch: 89, contextMatch: 70, sentiment: 91, trustQuality: 82, ratingScore: 93 },
     whyBullets: [
       'Quality rated 93/100 across 12 review mentions, matching your top preference.',
       '88% Review Trust Signal (Higher-Trust): 31 customer reviews evaluated.',
@@ -500,12 +500,12 @@ const PRECOMPUTED_RECS = {
   },
   p120: {
     finalScore: 79.8,
-    breakdown: { aspectMatch: 81, contextMatch: 70, sentiment: 78, trustQuality: 71, overallRating: 83 },
+    breakdown: { aspectMatch: 81, contextMatch: 70, sentiment: 78, trustQuality: 71, ratingScore: 83 },
     whyBullets: ['80% Review Trust Signal (Higher-Trust): 17 customer reviews evaluated.'],
   },
   p122: {
     finalScore: 82.2,
-    breakdown: { aspectMatch: 83, contextMatch: 90, sentiment: 78, trustQuality: 65, overallRating: 85 },
+    breakdown: { aspectMatch: 83, contextMatch: 90, sentiment: 78, trustQuality: 65, ratingScore: 85 },
     whyBullets: [
       'Price & Value rated 95/100 across 12 review mentions, matching your top preference.',
       '77% Review Trust Signal (Medium): 20 customer reviews evaluated.',
@@ -513,7 +513,7 @@ const PRECOMPUTED_RECS = {
   },
   p123: {
     finalScore: 88.0,
-    breakdown: { aspectMatch: 88, contextMatch: 90, sentiment: 87, trustQuality: 77, overallRating: 90 },
+    breakdown: { aspectMatch: 88, contextMatch: 90, sentiment: 87, trustQuality: 77, ratingScore: 90 },
     whyBullets: [
       'Quality rated 90/100 across 11 review mentions, matching your top preference.',
       '86% Review Trust Signal (Higher-Trust): 15 customer reviews evaluated.',
@@ -527,7 +527,7 @@ export function dummyRecommendations(preferences = {}) {
     .map((p) => {
       const rec = PRECOMPUTED_RECS[p._id] || {
         finalScore: 72,
-        breakdown: { aspectMatch: 72, contextMatch: 70, sentiment: 70, trustQuality: 70, overallRating: 70 },
+        breakdown: { aspectMatch: 72, contextMatch: 70, sentiment: 70, trustQuality: 70, ratingScore: 70 },
         whyBullets: [`${p.aggregateScores.trustScore}% Review Trust Signal: ${p.reviewCount} customer reviews evaluated.`],
       };
       return { place: p, ...rec };

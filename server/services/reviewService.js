@@ -71,6 +71,9 @@ const getPlaceIntelligence = async (placeId) => {
     positiveEvidence: analyses.flatMap((a) => a.positiveEvidence || []).slice(0, 8),
     negativeEvidence: analyses.flatMap((a) => a.negativeEvidence || []).slice(0, 8),
     trustScore: place.aggregateScores?.trustScore ?? 0,
+    sentimentAverage: place.aggregateScores?.sentimentAverage ?? 0.5,
+    aspects: place.aggregateScores?.aspects ?? {},
+    reviewCount: analyses.length,
   };
 };
 

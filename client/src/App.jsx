@@ -16,7 +16,7 @@ function App() {
         <Route path="/preferences" element={<Preferences />} />
         <Route path="/recommendations" element={<Recommendations />} />
         <Route path="/places/:id" element={<PlaceDetails />} />
-        <Route path="/intelligence" element={<ReviewIntelligence />} />
+        <Route path="/places/:id/intelligence" element={<ReviewIntelligence />} />
       </Route>
     </Routes>
   );

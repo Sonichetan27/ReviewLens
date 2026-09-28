@@ -6,7 +6,7 @@
  */
 
 const Place = require('../models/Place');
-const { listReviewsForPlace } = require('../services/reviewService');
+const { listReviewsForPlace, getPlaceIntelligence } = require('../services/reviewService');
 
 /**
  * GET /api/places
@@ -64,4 +64,19 @@ const getPlaceReviews = async (req, res, next) => {
   }
 };
 
-module.exports = { listPlaces, getPlaceById, getPlaceReviews };
+/**
+ * GET /api/places/:id/intelligence
+ */
+const getPlaceIntelligenceById = async (req, res, next) => {
+  try {
+    const intelligence = await getPlaceIntelligence(req.params.id);
+    if (!intelligence) {
+      return res.status(404).json({ error: `Place not found: ${req.params.id}` });
+    }
+    res.json({ data: intelligence });
+  } catch (err) {
+    next(err);
+  }
+};
+
+module.exports = { listPlaces, getPlaceById, getPlaceReviews, getPlaceIntelligenceById };

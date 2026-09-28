@@ -11,7 +11,7 @@ function WhyRecommendedPanel({ item, open, onClose }) {
     { key: 'contextMatch', label: 'Context / budget', weight: '20%' },
     { key: 'sentiment', label: 'Sentiment', weight: '15%' },
     { key: 'trustQuality', label: 'Trust-adjusted quality', weight: '15%' },
-    { key: 'overallRating', label: 'Star rating', weight: '10%' },
+    { key: 'ratingScore', label: 'Star rating', weight: '10%' },
   ];
 
   return (

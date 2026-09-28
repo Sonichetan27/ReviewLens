@@ -3,8 +3,7 @@
  * Components and hooks must import from here — never call fetch/axios directly.
  *
  * Live envelope (ARCHITECTURE.md §2.3): `{ data: ... }` unwrapped here.
- * Day 1: VITE_USE_DUMMY=true returns fixtures with the same shapes.
- * Day 2: set VITE_USE_DUMMY=false so these methods hit Express.
+ * Set VITE_USE_DUMMY=true to use offline fixtures; default is the live Express API.
  */
 
 import {
@@ -16,8 +15,8 @@ import {
   reviewsFor,
 } from '../data/fixtures.js';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
-const USE_DUMMY = import.meta.env.VITE_USE_DUMMY !== 'false';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const USE_DUMMY = import.meta.env.VITE_USE_DUMMY === 'true';
 
 const LATENCY_MS = 420;
 
@@ -138,7 +137,7 @@ export async function getPlaceIntelligence(placeId) {
     await delay();
     return intelligenceFor(placeId);
   }
-  const payload = await request(`/api/reviews/intelligence/${encodeURIComponent(placeId)}`);
+  const payload = await request(`/api/places/${encodeURIComponent(placeId)}/intelligence`);
   return payload.data;
 }
 
