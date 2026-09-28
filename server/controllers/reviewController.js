@@ -4,7 +4,7 @@
  * Zero business logic here — delegates to reviewService per ARCHITECTURE.md §3.1.
  */
 
-const { listReviewsForPlace } = require('../services/reviewService');
+const { listReviewsForPlace, getPlaceIntelligence } = require('../services/reviewService');
 
 /**
  * GET /api/reviews?placeId=:id
@@ -34,4 +34,19 @@ const createReview = async (_req, res) => {
   res.status(501).json({ error: 'Review submission not yet implemented (planned for Day 2).' });
 };
 
-module.exports = { listReviews, createReview };
+/**
+ * GET /api/reviews/intelligence/:placeId
+ */
+const getIntelligence = async (req, res, next) => {
+  try {
+    const intelligence = await getPlaceIntelligence(req.params.placeId);
+    if (!intelligence) {
+      return res.status(404).json({ error: `Place not found: ${req.params.placeId}` });
+    }
+    res.json({ data: intelligence });
+  } catch (err) {
+    next(err);
+  }
+};
+
+module.exports = { listReviews, createReview, getIntelligence };

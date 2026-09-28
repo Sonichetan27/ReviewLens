@@ -4,9 +4,11 @@ import BottomNav from '../components/navigation/BottomNav.jsx';
 
 function MainLayout() {
   return (
-    <div>
+    <div className="min-h-screen bg-background pb-20 md:pb-0">
       <TopNav />
-      <Outlet />
+      <main className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-8">
+        <Outlet />
+      </main>
       <BottomNav />
     </div>
   );

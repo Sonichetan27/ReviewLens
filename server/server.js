@@ -18,6 +18,21 @@ app.use(cors({
 }));
 app.use(express.json({ limit: '50kb' }));
 
+// ── Root route ─────────────────────────────────────────────────────────────────
+app.get('/', (_req, res) => {
+  res.json({
+    message: 'Welcome to ReviewLens API',
+    version: '0.0.1',
+    endpoints: {
+      health: '/api/health',
+      places: '/api/places',
+      reviews: '/api/reviews',
+      recommendations: '/api/recommendations'
+    },
+    frontend: process.env.CLIENT_URL || 'http://localhost:5173'
+  });
+});
+
 // ── Health check (canonical: GET /api/health) ─────────────────────────────────
 app.get('/api/health', (_req, res) => {
   res.json({

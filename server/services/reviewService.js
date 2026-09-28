@@ -9,6 +9,7 @@
 
 const Review = require('../models/Review');
 const Place = require('../models/Place');
+const ReviewAnalysis = require('../models/ReviewAnalysis');
 
 const ASPECTS = ['quality', 'cleanliness', 'service', 'price', 'crowd', 'safety', 'accessibility', 'facilities'];
 
@@ -29,7 +30,48 @@ const listReviewsForPlace = async (placeId, opts = {}) => {
     Review.countDocuments({ placeId }),
   ]);
 
-  return { reviews, total, page, limit };
+  const analyses = await ReviewAnalysis.find({
+    reviewId: { $in: reviews.map((r) => r._id) },
+  }).lean();
+  const byReview = Object.fromEntries(analyses.map((a) => [String(a.reviewId), a]));
+  const hydrated = reviews.map((review) => ({
+    ...review,
+    analysis: byReview[String(review._id)] || null,
+  }));
+
+  return { reviews: hydrated, total, page, limit };
 };
 
-module.exports = { listReviewsForPlace };
+/**
+ * Aggregate trust, sentiment, and evidence quotes for a place.
+ */
+const getPlaceIntelligence = async (placeId) => {
+  const place = await Place.findById(placeId).lean();
+  if (!place) return null;
+
+  const analyses = await ReviewAnalysis.find({ placeId }).lean();
+  const trustDistribution = { higherTrust: 0, medium: 0, highRisk: 0 };
+
+  for (const analysis of analyses) {
+    const level = analysis.trustSignal?.level;
+    if (level === 'higher-trust') trustDistribution.higherTrust += 1;
+    else if (level === 'high-risk') trustDistribution.highRisk += 1;
+    else trustDistribution.medium += 1;
+  }
+
+  return {
+    placeId,
+    place,
+    trustDistribution,
+    sentimentSummary: place.aggregateScores?.sentimentSummary ?? {
+      positiveCount: 0,
+      neutralCount: 0,
+      negativeCount: 0,
+    },
+    positiveEvidence: analyses.flatMap((a) => a.positiveEvidence || []).slice(0, 8),
+    negativeEvidence: analyses.flatMap((a) => a.negativeEvidence || []).slice(0, 8),
+    trustScore: place.aggregateScores?.trustScore ?? 0,
+  };
+};
+
+module.exports = { listReviewsForPlace, getPlaceIntelligence };
