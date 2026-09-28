@@ -1,19 +1,24 @@
 const mongoose = require('mongoose');
 
-// TODO: implement in Day 1 — connect to MongoDB, handle retries, and export connection state
-
 const connectDB = async () => {
   const uri = process.env.MONGODB_URI;
+
   if (!uri) {
-    console.warn('MONGODB_URI is empty; skipping database connection (scaffold).');
-    return;
+    console.error('FATAL: MONGODB_URI is not defined in environment variables.');
+    console.error('Create server/.env with MONGODB_URI=<your-atlas-connection-string>');
+    process.exit(1);
   }
 
   try {
-    await mongoose.connect(uri);
-    console.log('MongoDB connected');
+    const conn = await mongoose.connect(uri, {
+      serverSelectionTimeoutMS: 10000, // 10 s timeout
+    });
+    console.log(`✅  MongoDB connected: ${conn.connection.host}`);
   } catch (error) {
-    console.warn('MongoDB connection skipped during scaffold:', error.message);
+    console.error('❌  MongoDB connection failed:');
+    console.error(`    ${error.message}`);
+    console.error('    Check MONGODB_URI in server/.env and ensure Atlas IP whitelist includes this machine.');
+    process.exit(1); // Do not start silently — crash loudly so the developer knows
   }
 };
 

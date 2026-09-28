@@ -1,11 +1,14 @@
 const express = require('express');
-const { listPlaces, getPlaceById } = require('../controllers/placeController');
+const { listPlaces, getPlaceById, getPlaceReviews } = require('../controllers/placeController');
 
 const router = express.Router();
 
-// TODO: implement in Day 2 — GET /places, GET /places/:id
+// GET /api/places                  — list all with optional ?city=&category=&budget=
+// GET /api/places/:id              — single place by slug id
+// GET /api/places/:id/reviews      — all reviews for a place
 
 router.get('/', listPlaces);
+router.get('/:id/reviews', getPlaceReviews);
 router.get('/:id', getPlaceById);
 
 module.exports = router;

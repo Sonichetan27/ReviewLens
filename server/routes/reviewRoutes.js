@@ -1,11 +1,13 @@
 const express = require('express');
 const { listReviews, createReview } = require('../controllers/reviewController');
+const { sanitizeReviewBody } = require('../middleware/validateRequest');
 
 const router = express.Router();
 
-// TODO: implement in Day 2 — GET /reviews, POST /reviews
+// GET /api/reviews?placeId=:id   — list reviews for a place
+// POST /api/reviews               — submit a new review (Day 2)
 
 router.get('/', listReviews);
-router.post('/', createReview);
+router.post('/', sanitizeReviewBody, createReview);
 
 module.exports = router;

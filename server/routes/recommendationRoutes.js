@@ -1,10 +1,11 @@
 const express = require('express');
-const { getRecommendations } = require('../controllers/recommendationController');
+const { postRecommendations } = require('../controllers/recommendationController');
+const { validateRecommendationBody } = require('../middleware/validateRequest');
 
 const router = express.Router();
 
-// TODO: implement in Day 4 — GET /recommendations
+// POST /api/recommendations — compute ranked recommendations from user preferences
 
-router.get('/', getRecommendations);
+router.post('/', validateRecommendationBody, postRecommendations);
 
 module.exports = router;
