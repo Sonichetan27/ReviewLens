@@ -57,14 +57,10 @@ app.use((_req, res) => {
 // ── Centralized error handler (must be last) ──────────────────────────────────
 app.use(errorHandler);
 
-// ── Startup ───────────────────────────────────────────────────────────────────
-const start = async () => {
-  await connectDB(); // crashes loudly on failure — never starts silently
-  app.listen(PORT, () => {
-    console.log(`🚀  ReviewLens API listening on port ${PORT}`);
-    console.log(`    AI mode: ${process.env.AI_MODE || 'mock'}`);
-    console.log(`    CORS origin: ${process.env.CLIENT_URL || '*'}`);
-  });
-};
+// ── Database connection ───────────────────────────────────────────────────────
+connectDB().catch((err) => {
+  console.error('Database connection failed:', err.message);
+});
 
-start();
+// Export Express app for Vercel
+module.exports = app;

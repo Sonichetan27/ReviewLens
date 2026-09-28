@@ -4,10 +4,8 @@ const connectDB = async () => {
   const uri = process.env.MONGODB_URI;
 
   if (!uri) {
-    console.error('FATAL: MONGODB_URI is not defined in environment variables.');
-    console.error('Create server/.env with MONGODB_URI=<your-atlas-connection-string>');
-    process.exit(1);
-  }
+  throw new Error('MONGODB_URI is not defined in environment variables.');
+}
 
   try {
     const conn = await mongoose.connect(uri, {
@@ -15,11 +13,9 @@ const connectDB = async () => {
     });
     console.log(`✅  MongoDB connected: ${conn.connection.host}`);
   } catch (error) {
-    console.error('❌  MongoDB connection failed:');
-    console.error(`    ${error.message}`);
-    console.error('    Check MONGODB_URI in server/.env and ensure Atlas IP whitelist includes this machine.');
-    process.exit(1); // Do not start silently — crash loudly so the developer knows
-  }
+  console.error('❌ MongoDB connection failed:', error.message);
+  throw error;
+}
 };
 
 module.exports = connectDB;
