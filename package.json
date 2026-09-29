@@ -2,15 +2,11 @@
   "name": "reviewlens",
   "private": true,
   "version": "0.0.1",
-  "workspaces": [
-    "client",
-    "server"
-  ],
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run start --workspace=server\"",
-    "dev:client": "npm run dev --workspace=client",
-    "dev:server": "npm run start --workspace=server",
-    "install:all": "npm install"
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm start\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"
