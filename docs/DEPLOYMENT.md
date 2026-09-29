@@ -4,64 +4,9 @@ This guide covers deployment options for ReviewLens to various platforms.
 
 ## Deployment Options
 
-### Option 1: Vercel (Full Stack Monorepo) - Recommended ⭐
+### Option 1: Vercel (Separate Frontend + Backend) - Recommended ⭐
 
-Deploy both frontend and backend on Vercel in a single deployment. This is the simplest option for full-stack deployment.
-
-#### Vercel Deployment Steps
-
-1. **Connect Repository**
-   - Go to [Vercel Dashboard](https://vercel.com/dashboard)
-   - Click "Add New Project"
-   - Import your GitHub repository: `Sonichetan27/ReviewLens`
-
-2. **Configure Project Settings**
-   - **Framework Preset**: Other
-   - **Root Directory**: `./` (project root)
-   - **Build Command**: (leave empty - Vercel will use vercel.json)
-   - **Output Directory**: (leave empty - handled by vercel.json)
-
-3. **Environment Variables**
-   Add these in Vercel Project Settings → Environment Variables:
-   ```
-   # Backend Configuration
-   PORT=3000
-   NODE_ENV=production
-   CLIENT_URL=https://your-app-name.vercel.app
-   MONGODB_URI=mongodb+srv://user:password@cluster.mongodb.net/...
-   MONGODB_DNS_SERVERS=
-   AI_MODE=live
-   GEMINI_API_KEY=your-gemini-api-key
-   GEMINI_MODEL=gemini-1.5-flash
-
-   # Frontend Configuration
-   VITE_API_URL=/api
-   VITE_USE_DUMMY=false
-   ```
-
-4. **Deploy**
-   - Click "Deploy"
-   - Vercel will automatically build and deploy both frontend and backend
-   - Your app will be available at: `https://your-app-name.vercel.app`
-
-#### Vercel Configuration
-The project includes `vercel.json` which handles:
-- Backend routing to `/api/*` → Express server
-- Frontend routing to `/*` → React app
-- Automatic builds for both client and server
-
-#### Benefits of Vercel Monorepo Deployment
-- ✅ Single deployment for entire stack
-- ✅ Automatic HTTPS
-- ✅ Global CDN
-- ✅ Serverless functions for backend
-- ✅ Zero config routing
-- ✅ Free tier available
-- ✅ Automatic deploys on git push
-
-### Option 2: Vercel (Frontend) + Render (Backend) - Alternative
-
-If you prefer separate platforms for frontend and backend:
+Deploy frontend and backend as separate Vercel projects. This provides better isolation and independent scaling.
 
 #### Frontend Deployment (Vercel)
 
@@ -70,23 +15,73 @@ If you prefer separate platforms for frontend and backend:
    - Click "Add New Project"
    - Import your GitHub repository: `Sonichetan27/ReviewLens`
 
-2. **Configure Build Settings**
+2. **Configure Frontend Project**
    - **Framework Preset**: Vite
    - **Root Directory**: `client`
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
    - **Install Command**: `npm install`
 
-3. **Environment Variables**
+3. **Frontend Environment Variables**
    Add these in Vercel Project Settings → Environment Variables:
    ```
-   VITE_API_URL=https://your-backend-url.onrender.com
+   VITE_API_URL=https://your-backend-app.vercel.app
    VITE_USE_DUMMY=false
    ```
 
-4. **Deploy**
+4. **Deploy Frontend**
    - Click "Deploy"
-   - Vercel will automatically deploy on git push
+   - Your frontend will be available at: `https://your-frontend-app.vercel.app`
+
+#### Backend Deployment (Vercel)
+
+1. **Create New Project for Backend**
+   - Go to [Vercel Dashboard](https://vercel.com/dashboard)
+   - Click "Add New Project"
+   - Import the same GitHub repository: `Sonichetan27/ReviewLens`
+
+2. **Configure Backend Project**
+   - **Framework Preset**: Other
+   - **Root Directory**: `server`
+   - **Build Command**: (leave empty - handled by vercel.json)
+   - **Output Directory**: (leave empty - handled by vercel.json)
+
+3. **Backend Environment Variables**
+   Add these in Vercel Project Settings → Environment Variables:
+   ```
+   PORT=3000
+   NODE_ENV=production
+   CLIENT_URL=https://your-frontend-app.vercel.app
+   MONGODB_URI=mongodb+srv://user:password@cluster.mongodb.net/...
+   MONGODB_DNS_SERVERS=
+   AI_MODE=live
+   GEMINI_API_KEY=your-gemini-api-key
+   GEMINI_MODEL=gemini-1.5-flash
+   ```
+
+4. **Deploy Backend**
+   - Click "Deploy"
+   - Your backend will be available at: `https://your-backend-app.vercel.app`
+
+#### Vercel Configuration Files
+- **Frontend**: `client/vercel.json` - Handles React app routing
+- **Backend**: `server/vercel.json` - Handles Express server as serverless function
+
+#### Benefits of Separate Vercel Deployments
+- ✅ Independent scaling and deployment
+- ✅ Better isolation between frontend and backend
+- ✅ Separate monitoring and analytics
+- ✅ Different environment variables per service
+- ✅ Free tier available for both projects
+- ✅ Automatic deploys on git push to each project
+
+### Option 2: Vercel (Frontend) + Render (Backend) - Alternative
+
+If you prefer to use Render for backend instead of Vercel:
+
+#### Frontend Deployment (Vercel)
+
+Same as Option 1 frontend deployment steps.
 
 #### Backend Deployment (Render)
 
@@ -191,7 +186,7 @@ For serverless deployment using Vercel's serverless functions:
 2. **Environment Variables**
    - Set all environment variables in Vercel
 
-Note: Option 1 (Vercel Monorepo) provides this functionality automatically with the existing `vercel.json` configuration.
+Note: Option 1 (Vercel Separate) provides this functionality automatically with the existing `server/vercel.json` configuration.
 
 ## Pre-Deployment Checklist
 
@@ -209,14 +204,14 @@ Note: Option 1 (Vercel Monorepo) provides this functionality automatically with 
 - [ ] `AI_MODE=live` set for production
 
 ### Frontend Configuration
-- [ ] `VITE_API_URL` set to `/api` (for Vercel monorepo) or deployed backend URL
+- [ ] `VITE_API_URL` set to deployed backend URL
 - [ ] `VITE_USE_DUMMY=false` set
 - [ ] Build runs successfully: `cd client && npm run build`
 
-### Serverless Configuration (Vercel)
+### Backend Configuration (Vercel Serverless)
 - [ ] Database connection caching implemented
 - [ ] Connection middleware added for serverless
-- [ ] API routing configured in vercel.json
+- [ ] Serverless routing configured in server/vercel.json
 - [ ] Cold start optimization handled
 
 ### Backend Configuration
@@ -257,7 +252,13 @@ npm run seed
 
 ## Vercel-Specific Considerations
 
-### Serverless Function Limits
+### Separate Project Management
+- **Frontend Project**: Deployed from `client/` directory
+- **Backend Project**: Deployed from `server/` directory
+- **Independent Scaling**: Each project can scale independently
+- **Separate Monitoring**: Individual analytics per project
+
+### Serverless Function Limits (Backend)
 - **Execution Time**: Max 10 seconds for Hobby, 60 seconds for Pro
 - **Memory**: 1024MB for Hobby, higher for Pro
 - **Cold Starts**: First request may be slower (2-5 seconds)
@@ -266,7 +267,8 @@ npm run seed
 ### Environment Variables in Vercel
 - Vercel automatically adds `VERCEL` environment variable
 - Use `process.env.VERCEL` to detect Vercel environment
-- All environment variables must be set in Vercel dashboard
+- All environment variables must be set in Vercel dashboard for each project
+- Frontend and backend have separate environment variable configurations
 
 ### Database Connection Optimization
 The project includes serverless-optimized database connection:
@@ -276,9 +278,10 @@ The project includes serverless-optimized database connection:
 
 ### Vercel Deployment Workflow
 1. Push to GitHub
-2. Vercel automatically triggers build
-3. Both frontend and backend deploy together
-4. Changes live at: `https://your-app.vercel.app`
+2. Each Vercel project automatically triggers build independently
+3. Frontend and backend deploy separately
+4. Frontend changes live at: `https://your-frontend-app.vercel.app`
+5. Backend changes live at: `https://your-backend-app.vercel.app`
 
 ## Troubleshooting
 
