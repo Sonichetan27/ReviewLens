@@ -7,6 +7,7 @@ const placeRoutes = require('./routes/placeRoutes');
 const reviewRoutes = require('./routes/reviewRoutes');
 const recommendationRoutes = require('./routes/recommendationRoutes');
 const errorHandler = require('./middleware/errorHandler');
+const ensureDbConnection = require('./middleware/dbConnection');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -45,6 +46,8 @@ app.get('/api/health', (_req, res) => {
 });
 
 // ── API Routes ────────────────────────────────────────────────────────────────
+// Ensure database connection for all API routes (serverless support)
+app.use('/api', ensureDbConnection);
 app.use('/api/places', placeRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/recommendations', recommendationRoutes);
@@ -57,12 +60,14 @@ app.use((_req, res) => {
 // ── Centralized error handler (must be last) ──────────────────────────────────
 app.use(errorHandler);
 
-// ── Database connection ───────────────────────────────────────────────────────
-const dbConnection = connectDB();
-
-// ── Start listening when run directly (local dev / Render), but not when this
-//    file is merely required as a serverless handler (Vercel imports the export).
+// ── Database connection (called on-demand for serverless) ─────────────────────
+// For serverless (Vercel), connection is called per-request via middleware
+// For local dev/Render, connection is established on startup
 if (require.main === module) {
+  // Local development or Render: connect on startup
+  connectDB();
+  
+  // Start listening
   app.listen(PORT, () => {
     console.log(`🚀  ReviewLens API listening on port ${PORT}`);
   });

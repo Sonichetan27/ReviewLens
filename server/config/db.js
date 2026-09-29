@@ -2,6 +2,9 @@ const mongoose = require('mongoose');
 const dns = require('node:dns');
 const configureMongoDns = require('../utils/mongodbDns');
 
+// Cache database connection for serverless environments
+let cachedConnection = null;
+
 const connectDB = async () => {
   const uri = process.env.MONGODB_URI;
 
@@ -10,6 +13,11 @@ const connectDB = async () => {
     console.log('💡 Set MONGODB_URI in server/.env to enable database functionality');
     console.log('💡 For local development, use: mongodb://localhost:27017/reviewlens');
     return null;
+  }
+
+  // Return cached connection if available (serverless optimization)
+  if (cachedConnection) {
+    return cachedConnection;
   }
 
   try {
@@ -29,6 +37,9 @@ const connectDB = async () => {
     
     console.log(`✅  MongoDB connected: ${conn.connection.host}`);
     console.log(`   Database: ${conn.connection.name}`);
+    
+    // Cache connection for serverless reuse
+    cachedConnection = conn;
     return conn;
   } catch (error) {
     console.error('❌ MongoDB connection failed:', error.message);
@@ -66,6 +77,9 @@ const connectDB = async () => {
           retryReads: true,
         });
         console.log(`✅  MongoDB reconnected: ${mainConn.connection.host}`);
+        
+        // Cache connection
+        cachedConnection = mainConn;
         return mainConn;
       } catch (fallbackError) {
         console.log(`❌ Fallback connection also failed: ${fallbackError.message}`);
