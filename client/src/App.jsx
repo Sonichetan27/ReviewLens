@@ -6,6 +6,7 @@ import Preferences from './pages/Preferences.jsx';
 import Recommendations from './pages/Recommendations.jsx';
 import PlaceDetails from './pages/PlaceDetails.jsx';
 import ReviewIntelligence from './pages/ReviewIntelligence.jsx';
+import Insights from './pages/Insights.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/recommendations" element={<Recommendations />} />
         <Route path="/places/:id" element={<PlaceDetails />} />
         <Route path="/places/:id/intelligence" element={<ReviewIntelligence />} />
+        <Route path="/intelligence" element={<Insights />} />
       </Route>
     </Routes>
   );

@@ -62,5 +62,13 @@ connectDB().catch((err) => {
   console.error('Database connection failed:', err.message);
 });
 
+// ── Start listening when run directly (local dev / Render), but not when this
+//    file is merely required as a serverless handler (Vercel imports the export).
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀  ReviewLens API listening on port ${PORT}`);
+  });
+}
+
 // Export Express app for Vercel
 module.exports = app;

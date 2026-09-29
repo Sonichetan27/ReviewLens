@@ -48,11 +48,11 @@ const runDeterministicMockAnalyzer = (text, _category) => {
   const lowerText = text.toLowerCase();
   const wordCount = text.split(/\s+/).length;
 
-  // Count positive and negative signals
+  // Count positive and negative signals (whole-review, used for overall sentiment only)
   const positiveCount = POSITIVE_WORDS.filter(w => lowerText.includes(w)).length;
   const negativeCount = NEGATIVE_WORDS.filter(w => lowerText.includes(w)).length;
 
-  // Derive sentiment
+  // Derive overall sentiment
   let sentiment;
   let sentimentScore;
   if (positiveCount > negativeCount * 1.5) {
@@ -67,34 +67,46 @@ const runDeterministicMockAnalyzer = (text, _category) => {
   }
   sentimentScore = Math.round(Math.min(0.98, Math.max(0.02, sentimentScore)) * 100) / 100;
 
-  // Detect mentioned aspects and score each
+  // Split into sentences once — reused for both per-aspect scoring and evidence extraction.
+  const sentences = text.split(/[.!?]+/).map(s => s.trim()).filter(s => s.length > 0);
+
+  // Per-aspect scoring: only the sentences that actually mention an aspect contribute to
+  // its score, so one review can score high on one aspect and low on another instead of
+  // every mentioned aspect getting the same review-wide number.
   const aspectScores = {};
   const mentionedAspects = [];
-  const positiveEvidence = [];
-  const negativeEvidence = [];
 
   for (const aspect of ASPECTS) {
     const keywords = ASPECT_KEYWORDS[aspect] || [];
-    const matches = keywords.filter(kw => lowerText.includes(kw));
-    if (matches.length > 0) {
-      mentionedAspects.push(aspect);
-      // Score = 50 base + positive signals up / negative signals down
-      let aspectScore = 55;
-      aspectScore += positiveCount * 8;
-      aspectScore -= negativeCount * 8;
-      // Bonus: aspect keyword is near a positive/negative word in context
-      if (POSITIVE_WORDS.some(pw => lowerText.includes(pw))) aspectScore += 10;
-      if (NEGATIVE_WORDS.some(nw => lowerText.includes(nw))) aspectScore -= 15;
-      aspectScore = Math.round(Math.min(100, Math.max(5, aspectScore)));
-      aspectScores[aspect] = aspectScore;
-    } else {
+    const relevantSentences = sentences.filter((s) => {
+      const sl = s.toLowerCase();
+      return keywords.some((kw) => sl.includes(kw));
+    });
+
+    if (relevantSentences.length === 0) {
       aspectScores[aspect] = null;
+      continue;
     }
+
+    mentionedAspects.push(aspect);
+
+    // Score each relevant sentence from ITS OWN local positive/negative words only.
+    const sentenceScores = relevantSentences.map((s) => {
+      const sl = s.toLowerCase();
+      const posHits = POSITIVE_WORDS.filter((pw) => sl.includes(pw)).length;
+      const negHits = NEGATIVE_WORDS.filter((nw) => sl.includes(nw)).length;
+      let score = 55 + posHits * 16 - negHits * 20;
+      return Math.min(98, Math.max(5, score));
+    });
+
+    const avg = sentenceScores.reduce((sum, s) => sum + s, 0) / sentenceScores.length;
+    aspectScores[aspect] = Math.round(avg);
   }
 
-  // Extract simple evidence sentences
-  const sentences = text.split(/[.!?]+/).map(s => s.trim()).filter(s => s.length > 15);
-  for (const sentence of sentences) {
+  // Extract evidence sentences (kept separate from scoring, still whole-text based)
+  const positiveEvidence = [];
+  const negativeEvidence = [];
+  for (const sentence of sentences.filter((s) => s.length > 15)) {
     const sl = sentence.toLowerCase();
     if (POSITIVE_WORDS.some(pw => sl.includes(pw)) && positiveEvidence.length < 3) {
       positiveEvidence.push(sentence);

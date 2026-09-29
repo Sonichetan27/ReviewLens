@@ -26,3 +26,20 @@ _Last audit: Part 1 complete. Everything below was verified by running code, exc
 - No `POST /api/reviews/analyze`; `POST /api/reviews` returns 501.
 - No tests, no deployment config, no radar chart / live places extras.
 See `docs/NEXT_PARTS.md` for ready-to-paste prompts.
+
+## Session update (Part 2 partial — today)
+Repo had moved forward since the audit above (commits `c90ee18`, `8f56bcc` — Vercel serverless prep by another agent). Re-verified and fixed:
+
+1. **CRITICAL — server would not run locally.** The Vercel-prep commit changed `server.js` to `module.exports = app` with no `app.listen(...)`, so `npm start` / `node server.js` started nothing. Fixed: now calls `app.listen(PORT, ...)` when run directly (`require.main === module`), while still exporting `app` for serverless use. Verified by starting the server and seeing it bind to a port.
+2. **Biggest demo risk fixed — mock AI analyzer now scores per aspect, not per review.** Previously every aspect mentioned in a review got the *same* score (derived from the whole review's positive/negative word count), so a review criticizing service but praising food scored both identically. Now each aspect's score comes only from the sentence(s) that mention it. Verified: a mixed review now scores quality=87 and service=15 in the same text.
+   - Re-ran the 4-priority-set ranking test from the Part 1 audit: rankings now visibly reorder between quality-heavy, price-heavy and cleanliness-heavy preference sets (previously two of the three sets returned the same #1 place; now they differ).
+3. **Dead nav tab fixed.** Bottom nav's "Insights" tab pointed to `/intelligence`, which had no matching route (blank screen). Added `client/src/pages/Insights.jsx` (a place picker reusing existing `PlaceCard`/`usePlaces`) and registered `/intelligence` in `App.jsx`. From there, users open a place, then "Open review intelligence" as before.
+
+### Still UNTESTED
+`npm run seed` and all endpoints against a real MongoDB Atlas URI — no DB credentials available in this session. Everything above was verified either by running the actual service files in-memory (no DB) or by starting the server process directly.
+
+### Still open (see docs/NEXT_PARTS.md)
+- Gemini `AI_MODE=live` is still a stub (falls back to mock with a console warning).
+- `visitType` collected by the UI is not yet used in `contextMatch` (constant 40).
+- No `POST /api/reviews/analyze`; `POST /api/reviews` still returns 501.
+- No automated tests yet.
