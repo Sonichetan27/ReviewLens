@@ -33,7 +33,10 @@ class ApiError extends Error {
 }
 
 async function request(path, { method = 'GET', body, signal } = {}) {
-  const url = `${API_BASE_URL}${path}`;
+  // Remove trailing slash from base URL and leading slash from path to avoid double slashes
+  const baseUrl = API_BASE_URL.replace(/\/$/, '');
+  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  const url = `${baseUrl}${cleanPath}`;
   let response;
 
   try {
