@@ -5,6 +5,7 @@
  * scoringService (40/20/15/15/10 formula) per ARCHITECTURE.md §3.1.
  */
 
+const mongoose = require('mongoose');
 const { getRecommendations } = require('../services/recommendationService');
 
 /**
@@ -13,6 +14,15 @@ const { getRecommendations } = require('../services/recommendationService');
  */
 const postRecommendations = async (req, res, next) => {
   try {
+    if (mongoose.connection.readyState !== 1) {
+      return res.status(503).json({ 
+        error: 'Database not connected. Please ensure MongoDB is running and configured.',
+        data: [],
+        count: 0,
+        preferences: req.body
+      });
+    }
+
     const preferences = req.body;
     const results = await getRecommendations(preferences);
 

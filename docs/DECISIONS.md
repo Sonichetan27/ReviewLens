@@ -157,3 +157,16 @@ ReviewLens needs to look like a trustworthy, modern consumer utility, distinct f
 
 ### Rationale
 Creates an inviting, premium aesthetic that conveys data clarity and trust.
+
+---
+
+## ADR-010: Optional DNS Resolver Override for MongoDB SRV Connections
+
+### Context
+Some Windows environments reject Node.js SRV queries through the default DNS resolver even when the MongoDB Atlas SRV record is resolvable through another DNS server.
+
+### Decision
+The backend accepts an optional comma-separated `MONGODB_DNS_SERVERS` environment variable. When set for a `mongodb+srv://` URI, the MongoDB connector configures Node's DNS servers immediately before `mongoose.connect()`. Standard `mongodb://` URIs are not affected. When unset or blank, the existing Node DNS behavior is unchanged.
+
+### Rationale
+The installed MongoDB driver performs Atlas SRV and TXT lookups through Node's `dns.promises` API and exposes no per-connection resolver option. This keeps the workaround opt-in and limited to SRV connections. Node's `dns.setServers()` affects `dns.resolve*` queries in that backend process; it does not change `dns.lookup()` behavior used by normal socket hostname resolution. Leave the variable blank to disable the override.

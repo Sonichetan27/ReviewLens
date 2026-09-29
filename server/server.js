@@ -58,9 +58,7 @@ app.use((_req, res) => {
 app.use(errorHandler);
 
 // ── Database connection ───────────────────────────────────────────────────────
-connectDB().catch((err) => {
-  console.error('Database connection failed:', err.message);
-});
+const dbConnection = connectDB();
 
 // ── Start listening when run directly (local dev / Render), but not when this
 //    file is merely required as a serverless handler (Vercel imports the export).

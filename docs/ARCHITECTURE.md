@@ -634,6 +634,7 @@ flowchart LR
 | `NODE_ENV` | `development` | `production` | `production` | Runtime mode |
 | `CLIENT_URL` | `http://localhost:5173` | `https://reviewlens.vercel.app` | *N/A* | CORS allowed origin |
 | `MONGODB_URI` | `mongodb://localhost:27017/reviewlens` | Production Atlas Connection String | **STRICTLY FORBIDDEN** | Database credentials |
+| `MONGODB_DNS_SERVERS` | Blank (Node default) | Blank (Node default) | **STRICTLY FORBIDDEN** | Optional comma-separated DNS servers for `mongodb+srv://` connections; applies to Node `dns.resolve*` calls in the backend process |
 | `GEMINI_API_KEY` | Developer Key or blank if mock | Google AI Studio Production Key | **STRICTLY FORBIDDEN** | Gemini API authentication |
 | `GEMINI_MODEL` | `gemini-1.5-flash` | `gemini-1.5-flash` | *N/A* | Gemini model identifier |
 | `AI_MODE` | `mock` (or `live`) | `live` | *N/A* | Switches AI mode |

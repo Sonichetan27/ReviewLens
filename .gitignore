@@ -1,6 +1,7 @@
 node_modules/
 .env
 .env.local
+.env.*.local
 dist/
 build/
 .DS_Store
@@ -8,4 +9,19 @@ build/
 client/dist/
 server/node_modules/
 client/node_modules/
+
+# Environment files (but keep examples)
+.env
+.env.local
+.env.*.local
 client/.env
+client/.env.local
+client/.env.*.local
+server/.env
+server/.env.local
+server/.env.*.local
+
+# Allow example files
+!.env.example
+!client/.env.example
+!server/.env.example

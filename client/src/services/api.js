@@ -47,7 +47,7 @@ async function request(path, { method = 'GET', body, signal } = {}) {
       body: body ? JSON.stringify(body) : undefined,
     });
   } catch {
-    throw new ApiError('Unable to reach ReviewLens. Check your connection and try again.', 0);
+    throw new ApiError('Unable to reach ReviewLens backend. Please ensure the server is running and try again.', 0);
   }
 
   let payload = null;
@@ -58,6 +58,10 @@ async function request(path, { method = 'GET', body, signal } = {}) {
   }
 
   if (!response.ok) {
+    // Special handling for database connection errors
+    if (response.status === 503) {
+      throw new ApiError('Database not connected. Please ensure MongoDB is configured and running.', 503);
+    }
     throw new ApiError(payload?.error || `Request failed (${response.status})`, response.status);
   }
 
