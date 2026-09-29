@@ -210,9 +210,10 @@ Note: Option 1 (Vercel Separate) provides this functionality automatically with 
 
 ### Backend Configuration (Vercel Serverless)
 - [ ] Database connection caching implemented
-- [ ] Connection middleware added for serverless
+- [ ] Conditional connection middleware for Vercel environment
 - [ ] Serverless routing configured in server/vercel.json
 - [ ] Cold start optimization handled
+- [ ] Server exports properly for Vercel functions
 
 ### Backend Configuration
 - [ ] Server starts without errors
