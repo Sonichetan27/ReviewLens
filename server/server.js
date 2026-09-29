@@ -46,8 +46,10 @@ app.get('/api/health', (_req, res) => {
 });
 
 // ── API Routes ────────────────────────────────────────────────────────────────
-// Ensure database connection for all API routes (serverless support)
-app.use('/api', ensureDbConnection);
+// Use database connection middleware for serverless (Vercel)
+if (process.env.VERCEL) {
+  app.use('/api', ensureDbConnection);
+}
 app.use('/api/places', placeRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/recommendations', recommendationRoutes);
@@ -73,5 +75,5 @@ if (require.main === module) {
   });
 }
 
-// Export Express app for Vercel
+// Export Express app for Vercel serverless
 module.exports = app;
