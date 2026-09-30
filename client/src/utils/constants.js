@@ -1,4 +1,4 @@
-export const CITIES = ['Indore', 'Bhopal', 'Jaipur', 'Mumbai'];
+export const CITIES = ['Bangalore', 'Bhopal', 'Delhi', 'Goa', 'Indore', 'Jaipur', 'Lucknow', 'Mumbai', 'Pune', 'Udaipur'];
 
 export const PLACE_TYPES = [
   { id: 'hotel', label: 'Hotels' },
