@@ -63,3 +63,13 @@ _Last audit: Frontend Functionality Audit & Repair (2026-09-29). Everything belo
 4. Configure live AI mode with Gemini API key for production
 5. Implement automated testing infrastructure
 6. Set up production deployment configuration
+
+## Session update — seed data expanded (today)
+Rebuilt `data/places.json` and `data/reviews.json` from scratch, same schema as before, much larger scale:
+
+- **10 cities** (kept Indore, Bhopal, Jaipur, Mumbai; added Delhi, Bangalore, Pune, Goa, Udaipur, Lucknow).
+- **400 places** total — exactly 10 hotels, 10 restaurants, 10 cafes, 10 attractions per city.
+- **5,001 reviews** — 10-15 per place, generated from category/aspect-specific sentence banks (not single fixed strings), so per-place review sets stay varied while still including: mixed reviews (different aspects, different sentiment, within the same review — exercises the per-sentence aspect scoring fixed earlier), single-aspect narrow reviews, generic low-detail reviews, verbatim-duplicated reviews per place (trust heuristic test), and rating/text sentiment mismatches.
+- Verified: all 400 place ids unique, all 5,001 review ids unique, zero orphan reviews (every `placeId` resolves), every city×category combination has exactly 10 places, every place has 10-15 reviews.
+- Verified: ran `aiService.analyzeReview` over all 5,001 reviews in mock mode with zero crashes (~230ms total), so `npm run seed` should complete quickly once pointed at a real MongoDB Atlas URI.
+- Not yet tested against a real Atlas cluster — still need your `MONGODB_URI`.
